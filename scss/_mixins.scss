@@ -1,7 +1,8 @@
 @mixin mobileFont{
   p{
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 500;
+  line-height: 1.5em;
   }
 
   li {
@@ -12,7 +13,7 @@
     font-size:5.5em;
     font-weight: 600;
     color: $h1Color;
-    letter-spacing: 0.05em;
+    line-height: 1.5em;
   }
   h2{
     font-size: 5em;

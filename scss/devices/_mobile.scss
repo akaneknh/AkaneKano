@@ -11,7 +11,6 @@
   }
 
   section {
-    padding: 5% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +58,7 @@
   }
 
   .bar {
-    background-color: rgb(122, 47, 47);
+    background-color: $primaryColor;
     display: block;
     height: 1em;
     border-radius: 3em;
@@ -197,7 +196,7 @@
       row-gap: 5px;
 
       li {
-        list-style-type: none;
+        // list-style-type: none;
         font-size: 3em;
         color: #555;
         padding-bottom: 1em;
@@ -221,7 +220,6 @@
     padding: 6em 5em 0 5em;
     h1 {
       text-align: left;
-      line-height: 1.5em;
   
     }
 
@@ -308,6 +306,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    padding-bottom: 5em;
 
     h3 {
       color: #333;
@@ -365,7 +364,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 0 5em;
+    padding: 0 5em 10em 5em;
     row-gap: 1em;
 
     .material-symbols-outlined {
@@ -451,7 +450,8 @@
 
     width: 100%;
     display: flex;
-    row-gap: 5em;
+    flex-direction: column;
+    row-gap: 1em;
     color: #888;
 
     span {
@@ -471,7 +471,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 8px;
+    row-gap: 2em;
   }
 
   .location-wrap {
@@ -529,6 +529,7 @@
   margin-top: 5em;
   margin-bottom: 5em;
   a {
+    font-weight: 600;
     font-size: 4em;
   }
 }
