@@ -1,0 +1,484 @@
+@media (min-width: 300px) {
+  body {
+    @include mobileFont
+    
+  }
+
+  section:nth-child(1) {
+    padding-top: 50px;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .desktop-header {
+    display: none;
+  }
+
+  button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  /* ------------------ */
+  /* humberger-menu */
+  /* ------------------ */
+
+  /* 以下、ハンバーガーボタン */
+  .burger-btn-wrap {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding-right: 0 8%;
+
+  }
+
+  .burger-btn {
+    position: fixed;
+    display: block;
+    height: 39px;
+    width: 39px;
+    z-index: 3;
+  }
+
+  .bar {
+    background-color: rgb(122, 47, 47);
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 20px;
+
+  }
+
+  .bar_top {
+    top: 10px;
+  }
+
+  .bar_mid {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bar_bottom {
+    bottom: 10px;
+  }
+
+  .burger-btn.close .bar_top {
+    transform: translate(-50%, 10px) rotate(45deg);
+    transition: transform .3s;
+  }
+
+  .burger-btn.close .bar_mid {
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  .burger-btn.close .bar_bottom {
+    transform: translate(-50%, -8px) rotate(-45deg);
+    transition: transform .3s;
+  }
+
+  /* スクロール制御 */
+  .noscroll {
+    overflow: hidden;
+  }
+
+  /* 以下、ハンバーガーメニュー */
+  .nav-wrapper {
+    visibility: hidden;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .5s;
+    z-index: 2;
+    /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
+  }
+
+  .header-nav {
+    background-color: #deb6a8;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .nav-list {
+    list-style: none;
+    display: block;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .nav-item {
+    margin-bottom: 40px;
+    margin-right: 0;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+  }
+
+  /* メニューオープン時 */
+  .nav-wrapper.fade {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-wrapper.close {
+    opacity: 0;
+    transition: opacity .3s;
+  }
+.aboutme-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  width: 100%;
+}
+
+  .design-skill, .coding-skill {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    >h3 {
+      font-weight: 800;
+    }
+    .skill-detail {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      >h4{
+        font-size: 14px;
+        font-weight: 700;
+        color: #555;
+      }
+    }
+    li {
+    color:#555;
+    }
+  
+  }
+
+.about-child01 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  >aside {
+    color: #888;
+    font-weight: 600;
+  }
+}
+  .about-child02 {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 25px;
+  }
+
+  .profile-img01,
+  .mygoal-img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+  }
+.area01-child02 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 15px;
+    width: 100%;
+  }
+
+  .fa-github,
+  .fa-linkedin {
+    color: #888;
+    font-size: 32px;
+  }
+
+
+// About
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  width:70%;
+  padding: 50px 0;
+}
+  .skill-img-sp {
+    width: 300px;
+    height: 300px;
+  }
+
+  .skill-img {
+    display: none;
+  }
+
+  // FEATURED WORK
+
+  .featured-work {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .work01,.work02{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    h3 {
+      color: #333;
+    }
+     .work-github {
+       height: 32px;
+       width: 32px;
+
+    }
+  }
+
+  iframe {
+    height: 250px;
+    width: 450px;
+  }
+
+  .area-1-wrap, .area-2-wrap, .area-3-wrap, .area-4-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    width: 70%;
+    padding:50px 0px;
+
+  }
+  time {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 12px;
+    color: #888;
+    text-align: end;
+  }
+  .area-3-child-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    >h3 {
+      font-weight: 600;
+      color: #555;
+      font-size: 24px;
+    }
+  }
+  .area-1-wrap-child  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    // border-top: 1px solid #888;
+    // border-bottom: 1px solid #888;
+    p {
+      padding: 10px 0;
+    }
+    h2 {
+      width: 100%;  
+      text-align: center;
+    }
+    h3 {
+      padding-top: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+    }
+ 
+  }
+
+  .area-1-wrap-child-goal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+  // Education
+  .education-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 10px;
+    width: 100%;
+    padding: 20px 0;
+
+    aside {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      font-size: 14px;
+      color: #888;
+    }
+
+  }
+
+  .location-wrap {
+
+    width: 100%;
+    display: flex;
+    row-gap: 5px;
+    font-size: 14px;
+    color: #888;
+
+    .material-symbols-outlined {
+      font-size: 16px;
+      color: #555;
+    }
+  }
+
+  .education-01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 8px;
+  }
+
+  .location-wrap {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+  }
+
+  .school{
+  h4 {
+    font-weight: 600;
+  }
+  >a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    width: fit-content;
+  }
+}
+
+  .fa-arrow-up-right-from-square {
+    font-size: 18px;
+  }
+.resume {
+  background-color: $primaryColor;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  height: 35px;
+  width: 200px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  .material-symbols-outlined {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+  
+
+ 
+  
+
+
+.resume:hover {
+  background-color: $hoverColor;
+  transition: 0.2s;
+}
+
+  // CONTACT 
+.area-4-wrap {
+  display: flex;
+  flex-direction: column;
+    height: 200px;
+    .mail-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      row-gap: 20px;
+      >i {
+        color: #333;
+        font-size: 24px;
+      }
+      > span {
+        color: #333;
+      }
+      > a {
+        text-decoration: none;
+        color: #555;
+   
+      }
+    }
+  }
+  .mail-wrap a:hover {
+    color: $hoverColor;
+    transition: 0.2s;
+  }
+
+  // footer
+  #footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
+    p {
+      font-size: 12px;
+    }
+ 
+  }
+}
