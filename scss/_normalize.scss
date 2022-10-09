@@ -5,23 +5,17 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: auto;
 }
 
 
 body {
-
-  min-width: 300px;
   font-family: $defaultFont;
-  background-color: #F6F4F4;
+  background-color: $bGColorL;
 }
 
-main {
-  width: 100%;
-}
 
 section:nth-child(1n) {
-  background-color: #F6F4F4;
+  background-color: $bGColorL;
 }
 
 section:nth-child(2n) {
@@ -31,11 +25,10 @@ section:nth-child(2n) {
 
 p {
   color: $pColor;
-
 }
 
 #footer {
-  background-color: rgb(78, 78, 78);
+  background-color: $bGColorD;
 
   p {
     color: #fff;
