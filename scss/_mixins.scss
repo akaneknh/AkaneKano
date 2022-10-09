@@ -6,33 +6,35 @@
 
   li {
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 600;
   }
   h1{
     font-size:5.5em;
+    font-weight: 600;
+    color: $h1Color;
+    letter-spacing: 0.05em;
   }
   h2{
     font-size: 5em;
     text-align: center;
     color:$h2Color;
-    letter-spacing: 0.4px;
+    font-weight: 600;
   }
   h3 {
     font-size: 4em;
     color:$h3Color;
-    font-weight: 700;
-    letter-spacing: 0.2px;
+    font-weight: 600;
   }
   h4{
     font-size: 3.5em;
     color:$h4Color;
-    font-weight: 400;
-
+    font-weight: 500;
     letter-spacing: 0.2px;
   }
 
   h5{
     font-size: 3em;
+    font-weight: 500;
     color:$h5Color;
     font-weight: 400;
     letter-spacing: 0.2px;

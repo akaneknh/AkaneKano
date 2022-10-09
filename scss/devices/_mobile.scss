@@ -216,7 +216,14 @@
   .about-child01 {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    text-align: left;
+    row-gap: 1em;
+    padding: 6em 5em 0 5em;
+    h1 {
+      text-align: left;
+      line-height: 1.5em;
+  
+    }
 
     >aside {
       color: $pColor;
@@ -231,7 +238,9 @@
     row-gap: 25px;
     justify-content: center;
     align-items: center;
+
   }
+  
 
   .profile-img01,
   .mygoal-img {
@@ -324,8 +333,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    row-gap: 2em;
     align-items: center;
     justify-content: center;
+ 
+   
   }
 
   .area-1-wrap .area-2-wrap,
@@ -336,7 +348,15 @@
     align-items: center;
     justify-content: center;
     padding: 0 5em;
-    row-gap: 8em;
+    row-gap: 2em;
+  }
+
+  .area-1-wrap, .area-2-wrap, .area-3-wrap, .area-4-wrap {
+    h2 {
+   
+        padding: 1em 0.8em;
+    
+    }
   }
 
 
@@ -385,10 +405,8 @@
     }
 
     h3 {
-      // padding-top: 10px;
       width: 100%;
       text-align: center;
-      font-weight: 500;
     }
 
   }
@@ -508,6 +526,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-top: 5em;
   margin-bottom: 5em;
   a {
     font-size: 4em;
