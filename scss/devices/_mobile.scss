@@ -584,21 +584,27 @@
     background-color: $primaryColor;
     border-radius: 1em;
     display: flex;
-    flex-direction: row;
-    text-decoration: none;
     justify-content: center;
     align-items: center;
-    column-gap: 0.5em;
     height: 3em;
     width: 90%;
-    color: #fff;
-
+    
     font-size: 3em;
+    a {
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      column-gap: 0.5em;
+      font-weight: 600;
+
+    }
   }
 
-  .mail-wrap a:hover {
+  .send-email-btn:hover {
     opacity: 0.5;
     transition: 0.2s;
+    cursor: pointer;
   }
 
   // footer
