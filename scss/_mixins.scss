@@ -1,9 +1,15 @@
 @mixin mobileFont{
   p{
   font-size: 3em;
+  font-weight: 500;
+  }
+
+  li {
+    font-size: 3em;
+    font-weight: 500;
   }
   h1{
-    font-size:5em;
+    font-size:5.5em;
   }
   h2{
     font-size: 5em;

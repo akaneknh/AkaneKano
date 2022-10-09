@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +6,11 @@
 
 html {
   scroll-behavior: smooth;
+  min-width: 100vw;
+}
+
+main {
+  width: 100vw;
 }
 
 body {
@@ -37,9 +41,14 @@ p {
 @media (min-width: 300px) {
   body p {
     font-size: 3em;
+    font-weight: 500;
+  }
+  body li {
+    font-size: 3em;
+    font-weight: 500;
   }
   body h1 {
-    font-size: 5em;
+    font-size: 5.5em;
   }
   body h2 {
     font-size: 5em;
@@ -70,7 +79,6 @@ p {
     padding-bottom: 5%;
   }
   section {
-    width: 100vw;
     padding: 5% 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -123,9 +131,9 @@ p {
   .burger-btn {
     position: fixed;
     display: block;
+    right: 5em;
+    top: 5em;
     z-index: 3;
-    margin-top: 10em;
-    margin-right: 5em;
   }
   .bar {
     background-color: #7a2f2f;
@@ -196,12 +204,12 @@ p {
   }
   .nav-list {
     list-style: none;
-    font-size: 4em;
+    font-size: 1.5em;
     display: block;
     left: 50%;
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -231,11 +239,8 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 0 5em;
     row-gap: 3em;
-    width: 100%;
   }
   .design-skill,
   .coding-skill {
@@ -246,13 +251,28 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 1em;
+    row-gap: 5em;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    padding: 8em 0 0 0;
+  }
+  .design-skill .design-skill-child,
+  .coding-skill .design-skill-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 5em;
   }
   .design-skill > h3,
   .coding-skill > h3 {
@@ -260,7 +280,9 @@ p {
     text-align: center;
   }
   .design-skill .skill-detail,
-  .coding-skill .skill-detail {
+  .design-skill .coding-skill,
+  .coding-skill .skill-detail,
+  .coding-skill .coding-skill {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -270,16 +292,21 @@ p {
             flex-direction: column;
     row-gap: 5px;
   }
-  .design-skill .skill-detail h4,
-  .coding-skill .skill-detail h4 {
-    font-size: 2.5em;
-    font-weight: 800;
-  }
-  .design-skill li,
-  .coding-skill li {
+  .design-skill .skill-detail li,
+  .design-skill .coding-skill li,
+  .coding-skill .skill-detail li,
+  .coding-skill .coding-skill li {
+    list-style-type: none;
     font-size: 3em;
     color: #555;
-    padding-bottom: 0.5em;
+    padding-bottom: 1em;
+  }
+  .design-skill .skill-detail h4,
+  .design-skill .coding-skill h4,
+  .coding-skill .skill-detail h4,
+  .coding-skill .coding-skill h4 {
+    font-size: 2.5em;
+    font-weight: 800;
   }
   .about-child01 {
     display: -webkit-box;
@@ -348,7 +375,7 @@ p {
   .fa-github,
   .fa-linkedin {
     color: #888;
-    font-size: 3em;
+    font-size: 5em;
   }
   .about {
     display: -webkit-box;
@@ -375,8 +402,7 @@ p {
     text-align: center;
     width: 100%;
   }
-  .area-2-wrap
-.featured-work {
+  .area-2-wrap .featured-work {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -390,6 +416,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 5em 5em;
     width: 80%;
     row-gap: 2em;
   }
@@ -417,8 +444,12 @@ p {
     height: 250px;
     width: 450px;
   }
-  .area-1, .area-2, .area-3, .area-4,
+  .area-1,
+  .area-2,
+  .area-3,
+  .area-4,
   .area-1-wrap-child-goal {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -433,8 +464,7 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .area-1-wrap
-.area-2-wrap,
+  .area-1-wrap .area-2-wrap,
   .area-3-wrap,
   .area-4-wrap {
     display: -webkit-box;
@@ -450,9 +480,8 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    row-gap: 5em;
-    width: 80%;
-    margin: 5% 0;
+    padding: 0 5em;
+    row-gap: 8em;
   }
   .area-3-child-wrap {
     display: -webkit-box;
@@ -466,6 +495,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0 5em;
     row-gap: 1em;
   }
   .area-3-child-wrap .material-symbols-outlined {
@@ -482,52 +512,6 @@ p {
     border-bottom: 1px solid #b9b7b7;
   }
   .area-1-wrap-child {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    row-gap: 10px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-  }
-  .area-1-wrap-child h2 {
-    width: 100%;
-    text-align: center;
-  }
-  .area-1-wrap-child h3 {
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
-  }
-  .area-1-wrap-child-goal {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    row-gap: 10px;
-  }
-  .area-1-wrap-child-goal h2 {
-    width: 100%;
-    text-align: center;
-    padding-bottom: 1em;
-  }
-  .my-goal-img-wrap, .my-goal-text-wrap {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -541,6 +525,50 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    row-gap: 2em;
+    padding: 5em 5em;
+  }
+  .area-1-wrap-child h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .area-1-wrap-child h3 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+  }
+  .area-1-wrap-child-goal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+  }
+  .area-1-wrap-child-goal h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  .my-goal-img-wrap,
+  .my-goal-text-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5em 5em;
   }
   .education-card {
     display: -webkit-box;
@@ -550,36 +578,26 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     row-gap: 10px;
     width: 100%;
     padding: 20px 0;
-  }
-  .education-card aside {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    row-gap: 1em;
-    font-size: 3em;
-    color: #888;
   }
   .location-wrap {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    row-gap: 5px;
+    row-gap: 5em;
     color: #888;
   }
   .location-wrap span {
-    font-size: 2.5em;
+    font-size: 4em;
+  }
+  .location-wrap h5 {
+    font-size: 4em;
   }
   .location-wrap .material-symbols-outlined {
     font-size: 1em;
@@ -598,17 +616,15 @@ p {
             justify-content: center;
     row-gap: 8px;
   }
-  .location-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-column-gap: 5px;
-            column-gap: 5px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .location-wrap span {
+    font-size: 3em;
+  }
+  .school {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
   }
   .school h4 {
+    font-size: 4em;
     font-weight: 600;
   }
   .school > a {
@@ -651,14 +667,32 @@ p {
             align-items: center;
     -webkit-column-gap: 0.1em;
             column-gap: 0.1em;
-    border-bottom: 0.1em solid #A0283A;
     color: #A0283A;
     font-size: 3em;
   }
   .resume .material-symbols-outlined {
-    font-size: 2em;
+    font-size: 1.5em;
   }
-  .resume:hover {
+  .download-resume {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 5em;
+  }
+  .download-resume a {
+    font-size: 4em;
+  }
+  .download-resume :hover {
     opacity: 0.8;
     -webkit-transition: 0.2s;
     transition: 0.2s;
@@ -746,11 +780,11 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 5em;
+    height: 10em;
     text-align: center;
   }
   #footer p {
-    font-size: 1em;
+    font-size: 2.5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
