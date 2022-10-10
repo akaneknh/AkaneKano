@@ -10,13 +10,13 @@ html {
 
 body {
   font-family: "Noto Sans", sans-serif;
-  background-color: #F9F9F9;
+  background-color: #F5F3F1;
 }
 
 section:nth-child(1n) {
   row-gap: 50px;
   padding: 5em 0;
-  background-color: #F9F9F9;
+  background-color: #F5F3F1;
 }
 
 section:nth-child(2n) {
@@ -25,11 +25,11 @@ section:nth-child(2n) {
 }
 
 p {
-  color: #555;
+  color: #888;
 }
 
 #footer {
-  background-color: #1E1E22;
+  background-color: #9B887F;
 }
 
 #footer p {
@@ -60,19 +60,19 @@ p {
   }
   body h3 {
     font-size: 4em;
-    color: #333;
+    color: #555;
     font-weight: 600;
   }
   body h4 {
     font-size: 3.5em;
-    color: #555;
+    color: #888;
     font-weight: 500;
     letter-spacing: 0.2px;
   }
   body h5 {
     font-size: 3em;
     font-weight: 500;
-    color: #555;
+    color: #888;
     font-weight: 400;
     letter-spacing: 0.2px;
   }
@@ -137,7 +137,7 @@ p {
     z-index: 3;
   }
   .bar {
-    background-color: #1E1E22;
+    background-color: #555;
     display: block;
     height: 1em;
     border-radius: 3em;
@@ -198,7 +198,7 @@ p {
     /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
   }
   .header-nav {
-    background: #F9F9F9;
+    background: #F5F3F1;
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -220,11 +220,7 @@ p {
   }
   .nav-item a {
     text-decoration: none;
-    background: #F85032;
-    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
-    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #555;
   }
   /* メニューオープン時 */
   .nav-wrapper.fade {
@@ -281,16 +277,16 @@ p {
   }
   .design-skill i,
   .coding-skill i {
-    background: #F85032;
-    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
-    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #E16E36;
   }
-  .design-skill > h3,
-  .coding-skill > h3 {
-    width: 100%;
-    text-align: center;
+  .design-skill .fa-code,
+  .coding-skill .fa-code {
+    color: #6B92B9;
+  }
+  .design-skill h3,
+  .coding-skill h3 {
+    width: 100% !important;
+    text-align: center !important;
   }
   .design-skill .skill-detail,
   .design-skill .coding-skill,
@@ -321,6 +317,27 @@ p {
     font-size: 2.5em;
     font-weight: 800;
   }
+  .design-skill .skill-detail h5,
+  .design-skill .coding-skill h5,
+  .coding-skill .skill-detail h5,
+  .coding-skill .coding-skill h5 {
+    display: none;
+  }
+  .about-text-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 2em;
+  }
+  .about-text-wrap p {
+    width: 90%;
+    text-align: center;
+    font-size: 3em;
+  }
   .about-child01 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -336,8 +353,11 @@ p {
   .about-child01 h1 {
     text-align: left;
   }
+  .about-child01 h1 span {
+    color: #E16E36;
+  }
   .about-child01 > aside {
-    color: #555;
+    color: #888;
     font-size: 3em;
     font-weight: 500;
   }
@@ -502,7 +522,10 @@ p {
     padding: 0 5em;
     row-gap: 2em;
   }
-  .area-1-wrap h2, .area-2-wrap h2, .area-3-wrap h2, .area-4-wrap h2 {
+  .area-1-wrap h2,
+  .area-2-wrap h2,
+  .area-3-wrap h2,
+  .area-4-wrap h2 {
     padding: 1em 0.8em;
   }
   .area-3-child-wrap {
@@ -691,11 +714,7 @@ p {
             align-items: center;
     -webkit-column-gap: 0.1em;
             column-gap: 0.1em;
-    background: #F85032;
-    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
-    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #E16E36;
     font-size: 3em;
   }
   .resume .material-symbols-outlined {
@@ -755,16 +774,11 @@ p {
     width: 100%;
   }
   .area-4-wrap .mail-wrap > i {
-    background: #F85032;
-    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
-    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #E16E36;
     font-size: 10em;
   }
   .area-4-wrap .mail-wrap > div {
-    background: #f85032;
-    background: linear-gradient(45deg, #f85032 0%, #eab787 100%);
+    background-color: #E16E36;
     font-size: 3em;
     text-align: center;
     width: 100%;
@@ -854,7 +868,7 @@ p {
   }
   body h3 {
     font-size: 4em;
-    color: #333;
+    color: #555;
     font-weight: 600;
   }
   body h4 {
@@ -929,9 +943,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -947,22 +961,31 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   nav ul li a {
     display: block;
-    text-decoration: none;
     color: #888;
-    padding: 20px;
+    text-decoration: none;
+    margin: 0 15px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
     font-size: 18px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
   nav ul li a:hover {
-    background: #F85032;
-    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
-    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    opacity: 0.5;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
@@ -1022,15 +1045,6 @@ p {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .circle01 {
-    background: #f85032;
-    background: linear-gradient(45deg, #f85032 0%, #eab787 100%);
-    width: 320px;
-    height: 350px;
-    border-radius: 62% 38% 42% 58% / 41% 46% 54% 59%;
-    opacity: 0.5;
-    margin: -350px 0px;
-  }
   .my-goal-img-wrap {
     padding: 0;
   }
@@ -1057,6 +1071,28 @@ p {
   .social i {
     font-size: 42px;
   }
+  .send-email-btn-nav {
+    height: unset;
+    border-radius: 5px;
+  }
+  .send-email-btn-nav a {
+    color: #fff;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+    background-color: #E16E36;
+  }
   .aboutme-wrap {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1068,6 +1104,21 @@ p {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .about-text-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .about-text-wrap p {
+    text-align: center;
+    font-size: 18px;
+    width: 400px;
+  }
   .design-skill,
   .coding-skill {
     width: 300px;
@@ -1078,6 +1129,12 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .design-skill h5,
+  .coding-skill h5 {
+    display: unset !important;
+    font-size: 21px !important;
+    font-weight: 600;
   }
   .design-skill-child {
     row-gap: 35px !important;
@@ -1115,7 +1172,6 @@ p {
     margin: 0;
   }
   .school h4 {
-    color: #333;
     font-size: 24px;
   }
   .location-wrap h5 {
@@ -1149,8 +1205,18 @@ p {
   .send-email-btn a {
     font-size: 21px;
   }
+  #area-4 {
+    padding-bottom: 200px;
+  }
+  .skill-detail {
+    row-gap: 5px !important;
+  }
+  .skill-detail ul {
+    padding-bottom: 20px;
+  }
   .skill-detail ul li {
-    font-size: 21px;
+    font-size: 18px !important;
+    padding: 5px !important;
   }
   .education-card {
     padding: 0;
@@ -1170,10 +1236,54 @@ p {
             column-gap: 100px;
   }
   #footer {
-    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    row-gap: 15px;
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10%;
   }
   #footer p {
+    color: #fff;
+    opacity: 0.8;
     font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .info-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    row-gap: 5px;
+    letter-spacing: 0.5px;
+  }
+  .info-footer aside {
+    color: #fff;
+    font-size: 18px;
+  }
+  .info-footer aside a {
+    color: #fff;
+  }
+  .info-footer aside a:hover {
+    opacity: 0.5;
   }
   .area-2-wrap {
     margin: 0;

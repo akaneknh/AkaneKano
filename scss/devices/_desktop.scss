@@ -18,7 +18,7 @@
 
   .desktop-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
@@ -29,23 +29,26 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
+    li{
+      display: flex;
+      justify-content: center;
+    }
   }
 
   nav ul li a {
     display: block;
+    color: $lBlack;
     text-decoration: none;
-    color: #888;
-    padding: 20px;
+    margin: 0 15px;
+    column-gap: 10px;
     font-size: 18px;
     transition: all 0.3s;
   }
 
 
   nav ul li a:hover {
-    background: #F85032;
-    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    opacity: $hovOpt;
     transition: 0.3s;
     
   }
@@ -107,15 +110,7 @@
 
   }
 
-.circle01 {
-  background: rgb(248,80,50);
-background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(234,183,135,1) 100%);
-  width: 320px;
-  height: 350px;
-  border-radius: 62% 38% 42% 58% / 41% 46% 54% 59%;
-  opacity: 0.5;
-  margin: -350px 0px;
-}
+
 
   .my-goal-img-wrap {
     padding: 0;
@@ -146,6 +141,21 @@ background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(234,183,135,1) 100
 
   }
 
+.send-email-btn-nav{ 
+height: unset;
+border-radius: 5px;
+
+ a{
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  padding: 10px 15px;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+  background-color: $prColor;
+}
+}
   .aboutme-wrap {
     flex-direction: row;
 padding: 0;
@@ -154,12 +164,28 @@ column-gap: 100px;
 
   }
 
+.about-text-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  p {
+    text-align: center;
+    font-size: 18px;
+    width: 400px;
+  }
+}
   .design-skill,
   .coding-skill {
      width: 300px;
     padding: 10px 0;
     justify-content: unset;
     align-items: center;
+    
+    h5 {
+      display: unset!important;
+      font-size: 21px!important;
+      font-weight: 600;
+    }
 
   }
 
@@ -207,7 +233,6 @@ column-gap: 100px;
     margin: 0;
 
     h4 {
-      color: #333;
       font-size: 24px;
     }
   }
@@ -253,14 +278,22 @@ column-gap: 100px;
       font-size: 21px;
     }
   }
+  #area-4{
 
-  .skill-detail ul {
+    padding-bottom: 200px;
+  }
+  .skill-detail{
 
+   row-gap: 5px!important;
+   ul {
+  padding-bottom:20px ;
     li {
-      font-size: 21px;
+    font-size: 18px!important;
+    padding: 5px!important;
     }
 
   }
+}
 
   .education-card {
     padding: 0;
@@ -275,11 +308,39 @@ column-gap: 100px;
   }
 
   #footer {
-
-    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+    height: 100px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10%;
 
     p {
+      color: #fff;
+      opacity: 0.8;
       font-size: 14px;
+      letter-spacing: 1px;
+
+    }
+  }
+  .info-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 5px;
+    letter-spacing: 0.5px;
+    aside {
+      color: #fff;
+      font-size: 18px;
+      a {    
+        color: #fff;
+      }
+      a:hover {
+        opacity: $hovOpt;
+      }
     }
   }
 

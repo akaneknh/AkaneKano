@@ -20,7 +20,11 @@
         <li><a href="#area-1">About Me</a></li>
         <li><a href="#area-2">Featured Work</a></li>
         <li><a href="#area-3">Education</a></li>
-        <li><a href="#area-4">Contact</a></li>
+        <li><a href="./img/profile.jpg" download>Resume</a>
+        </li>
+        <li class="send-email-btn-nav">
+          <a href="mailto:akanekanoweb@gmail.com"><i class="fa-regular fa-paper-plane"></i>Send Email</a>
+        </li>
       </ul>
     </nav>
     <!-- NAVI FOR MOBILE -->
@@ -30,6 +34,8 @@
           <li class="nav-item"><a href="#area-1">About Me</a></li>
           <li class="nav-item"><a href="#area-2">Featured Work</a></li>
           <li class="nav-item"><a href="#area-3">Education</a></li>
+          <li class="nav-item"><a href="./img/profile.jpg" download>Resume</a>
+          </li>
           <li class="nav-item"><a href="#area-4">Contact</a></li>
         </ul>
       </nav>
@@ -49,7 +55,7 @@
       <div class="about">
         <div class="about-child01">
 
-          <h1>Hi I'm Akane, A
+          <h1>Hi I'm <span>Akane</span>, A
             UI/UX Designer<br> Based in Vancouver</h1>
         </div>
 
@@ -60,13 +66,18 @@
                 class="fa-brands fa-linkedin"></i></a>
           </div>
           <img class="profile-img01" src="./img/profile.jpg">
- 
+
         </div>
       </div>
 
     </section>
     <section id="area-1">
-      <h2>About me</h2>
+      <div class="about-text-wrap">
+        <h2>About me</h2>
+        <p>2 years experiences UI / UX designer having web development skills.</p>
+      </div>
+
+
       <div class="area-1-wrap">
 
         <div class="aboutme-wrap">
@@ -77,6 +88,7 @@
               <h3>Design Skill</h3>
             </div>
             <div class="skill-detail">
+              <h5>Practical Level</h5>
               <ul>
                 <li>
                   Figma / Sketch / Adobe XD / Photoshop
@@ -100,12 +112,15 @@
               <h3>Coding Skill</h3>
             </div>
             <div class="skill-detail">
+              <h5>Practical Level</h5>
               <ul>
                 <li>HTML / CSS / SCSS </li>
-                
+                <li>Git / GitHub</li>
+              </ul>
+              <h5>Basic Level</h5>
+              <ul>
                 <li>JavaScript (React / jQuery)</li>
                 <li>PHP / MySQL</li>
-                <li>Git / GitHub</li>
               </ul>
             </div>
           </div>
@@ -244,12 +259,7 @@
         </div>
 
       </div>
-      <div class="download-resume">
-        <a class="resume" href="#" download>Akane's Resume
-          <span class="material-symbols-outlined">file_download
-          </span>
-        </a>
-      </div>
+
 
     </section>
     <section id="area-4">
@@ -266,7 +276,12 @@
   </main>
 
   <footer id="footer">
-    <p>&copy; 2022 Created by Akane Kano</p>
+    <div class="info-footer">
+    <aside>UI/IX Designer: Akane Kano</aside>
+    <aside>Contact : <a href="mailto:akanekanoweb@gmail.com">akanekanoweb@gmail.com</a></aside>
+  </div>
+    <p>Copyright &copy; Akane Kano All Right Reserved.</p>
+ 
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"

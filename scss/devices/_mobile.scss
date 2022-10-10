@@ -58,7 +58,8 @@
   }
 
   .bar {
-    background-color: #1E1E22;
+    background-color: $mBlack;
+
     display: block;
     height: 1em;
     border-radius: 3em;
@@ -118,7 +119,7 @@
   }
 
   .header-nav {
-    background: $bGColorL;
+    background: $bgColorL;
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -142,11 +143,8 @@
 
     a {
       text-decoration: none;
-      background: #F85032;
-      background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      
+      color: $mBlack;
+
     }
 
   }
@@ -165,8 +163,8 @@
   .aboutme-wrap {
     display: flex;
     flex-direction: column;
-  
-   
+
+
     padding: 0 5em;
     row-gap: 3em;
   }
@@ -186,23 +184,25 @@
       flex-direction: column;
       row-gap: 5em;
     }
-     i {
-      background: #F85032;
-      background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      
-      
-     }
 
-    >h3 {
-      width: 100%;
-      text-align: center;
+    i {
+      color: $prColor;
+
+
+    }
+
+    .fa-code {
+      color: $acsColor;
+    }
+
+    h3 {
+      width: 100% !important;
+      text-align: center!important;
     }
 
     .skill-detail,
     .coding-skill {
-     
+
       display: flex;
       flex-direction: column;
 
@@ -219,10 +219,24 @@
         font-size: 2.5em;
         font-weight: 800;
       }
+
+      h5 {
+        display: none;
+      }
     }
 
 
 
+  }
+  .about-text-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    p {
+      width: 90%;
+      text-align: center;
+      font-size: 3em;
+    }
   }
 
   .about-child01 {
@@ -231,13 +245,17 @@
     text-align: left;
     row-gap: 1em;
     padding: 6em 5em 0 5em;
+
     h1 {
       text-align: left;
-  
+      span {
+        color: $prColor;
+      }
+
     }
 
     >aside {
-      color: $pColor;
+      color: $lBlack;
       font-size: 3em;
       font-weight: 500;
     }
@@ -251,7 +269,7 @@
     align-items: center;
 
   }
-  
+
 
   .profile-img01,
   .mygoal-img {
@@ -342,6 +360,7 @@
   .area-3,
   .area-4,
   .area-1-wrap-child-goal {
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -361,11 +380,14 @@
     row-gap: 2em;
   }
 
-  .area-1-wrap, .area-2-wrap, .area-3-wrap, .area-4-wrap {
+  .area-1-wrap,
+  .area-2-wrap,
+  .area-3-wrap,
+  .area-4-wrap {
     h2 {
-   
-        padding: 1em 0.8em;
-    
+
+      padding: 1em 0.8em;
+
     }
   }
 
@@ -390,7 +412,7 @@
       text-align: center;
       width: 100%;
       padding-bottom: 0.4em;
-     
+
     }
   }
 
@@ -468,6 +490,7 @@
     span {
       font-size: 4em;
     }
+
     h5 {
       font-size: 4em;
     }
@@ -494,6 +517,7 @@
   .school {
     padding-top: 1em;
     padding-bottom: 1.5em;
+
     h4 {
       font-size: 4em;
       font-weight: 600;
@@ -522,12 +546,10 @@
     justify-content: center;
     align-items: center;
     column-gap: 0.1em;
-    background: #F85032;
-    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+    color: $prColor;
+
     font-size: 3em;
+
     .material-symbols-outlined {
       font-size: 1.5em;
     }
@@ -536,22 +558,23 @@
   }
 
 
-.download-resume {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5em;
-  margin-bottom: 5em;
-  a {
-    font-weight: 600;
-    font-size: 4em;
+  .download-resume {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    a {
+      font-weight: 600;
+      font-size: 4em;
+    }
   }
-}
 
 
 
-.download-resume :hover {
+  .download-resume :hover {
     opacity: 0.8;
     transition: 0.2s;
   }
@@ -572,18 +595,12 @@
       width: 100%;
 
       >i {
-        background: #F85032;
-        background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
+        color: $prColor;
         font-size: 10em;
       }
 
       >div {
-        background: rgb(248,80,50);
-        background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(234,183,135,1) 100%);
-
+        background-color: $prColor;
         font-size: 3em;
         text-align: center;
         width: 100%;
@@ -608,8 +625,9 @@
     align-items: center;
     height: 3em;
     width: 90%;
-    
+
     font-size: 3em;
+
     a {
       text-decoration: none;
       color: #fff;

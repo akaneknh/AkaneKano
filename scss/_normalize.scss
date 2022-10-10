@@ -11,14 +11,14 @@ html {
 
 body {
   font-family: $defaultFont;
-  background-color: $bGColorL;
+  background-color: $bgColorL;
 }
 
 
 section:nth-child(1n) {
   row-gap: 50px;
   padding: 5em 0;
-  background-color: $bGColorL;
+  background-color: $bgColorL;
 }
 
 section:nth-child(2n) {
@@ -28,11 +28,11 @@ section:nth-child(2n) {
 
 
 p {
-  color: $pColor;
+  color: $lBlack;
 }
 
 #footer {
-  background-color: #1E1E22;
+  background-color: #9B887F;
 
   p {
     color: #fff;
