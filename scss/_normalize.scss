@@ -5,10 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  min-width: 100vw;
-}
-main {
-  width: 100vw;
+
 }
 
 
@@ -19,6 +16,7 @@ body {
 
 
 section:nth-child(1n) {
+  row-gap: 50px;
   padding: 5em 0;
   background-color: $bGColorL;
 }
