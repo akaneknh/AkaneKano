@@ -42,7 +42,12 @@
 
 
   nav ul li a:hover {
-    color: $hoverColor;
+    background: #F85032;
+    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+    
   }
 
   .nav-wrapper,
@@ -92,8 +97,6 @@
 
   .area-1-wrap {
     display: flex;
-
-
   }
 
   .profile-img01 {
@@ -103,6 +106,16 @@
     object-fit: cover;
 
   }
+
+.circle01 {
+  background: rgb(248,80,50);
+background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(234,183,135,1) 100%);
+  width: 320px;
+  height: 350px;
+  border-radius: 62% 38% 42% 58% / 41% 46% 54% 59%;
+  opacity: 0.5;
+  margin: -350px 0px;
+}
 
   .my-goal-img-wrap {
     padding: 0;
@@ -116,7 +129,11 @@
   
   }
 
-
+.work01-img, .work02-img {
+  height: 300px;
+  width: 300px;
+  background-color: #888;
+}
 
   .social {
     justify-content: flex-start;
@@ -151,7 +168,6 @@ column-gap: 100px;
   .design-skill-child {
     row-gap: 35px !important;
     i {
-      color: $primalyColor;
       font-size: 80px;
     }
   }
@@ -221,14 +237,16 @@ column-gap: 100px;
       font-size: 21px;
     }
   }
-
+.mail-wrap {
+  width: unset;
+}
   .mail-wrap>a {
     font-size: 21px !important;
   }
 
   .send-email-btn {
     height: 50px;
-    width: 50px;
+    width: 100%;
     font-size: 32px;
 
     a {
@@ -283,6 +301,13 @@ column-gap: 100px;
 
   .material-symbols-outlined {
     font-size: 20px;
+  }
+  #area-1 {
+    row-gap: 100px;
+  }
+
+  .area-4-wrap {
+    width: unset;
   }
 
 }

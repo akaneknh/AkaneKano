@@ -58,7 +58,7 @@
   }
 
   .bar {
-    background-color: $primaryColor;
+    background-color: #1E1E22;
     display: block;
     height: 1em;
     border-radius: 3em;
@@ -142,7 +142,11 @@
 
     a {
       text-decoration: none;
-      color: $primaryColor;
+      background: #F85032;
+      background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
     }
 
   }
@@ -182,6 +186,14 @@
       flex-direction: column;
       row-gap: 5em;
     }
+     i {
+      background: #F85032;
+      background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+      
+     }
 
     >h3 {
       width: 100%;
@@ -190,13 +202,14 @@
 
     .skill-detail,
     .coding-skill {
+     
       display: flex;
       flex-direction: column;
 
       row-gap: 5px;
 
       li {
-        // list-style-type: none;
+        list-style-type: none;
         font-size: 3em;
         color: #555;
         padding-bottom: 1em;
@@ -220,9 +233,6 @@
     padding: 6em 5em 0 5em;
     h1 {
       text-align: left;
-      span {
-        color: $primaryColor;
-      }
   
     }
 
@@ -512,7 +522,11 @@
     justify-content: center;
     align-items: center;
     column-gap: 0.1em;
-    color: $primaryColor;
+    background: #F85032;
+    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
     font-size: 3em;
     .material-symbols-outlined {
       font-size: 1.5em;
@@ -555,14 +569,20 @@
       align-items: center;
       justify-content: center;
       row-gap: 5em;
+      width: 100%;
 
       >i {
-        color: $primaryColor;
+        background: #F85032;
+        background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
         font-size: 10em;
       }
 
       >div {
-        background-color: $primaryColor;
+        background: rgb(248,80,50);
+        background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(234,183,135,1) 100%);
 
         font-size: 3em;
         text-align: center;
@@ -582,7 +602,6 @@
   }
 
   .send-email-btn {
-    background-color: $primaryColor;
     border-radius: 1em;
     display: flex;
     justify-content: center;

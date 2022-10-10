@@ -29,7 +29,7 @@ p {
 }
 
 #footer {
-  background-color: #8D8686;
+  background-color: #1E1E22;
 }
 
 #footer p {
@@ -137,7 +137,7 @@ p {
     z-index: 3;
   }
   .bar {
-    background-color: #A0283A;
+    background-color: #1E1E22;
     display: block;
     height: 1em;
     border-radius: 3em;
@@ -220,7 +220,11 @@ p {
   }
   .nav-item a {
     text-decoration: none;
-    color: #A0283A;
+    background: #F85032;
+    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
+    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   /* メニューオープン時 */
   .nav-wrapper.fade {
@@ -275,6 +279,14 @@ p {
             flex-direction: column;
     row-gap: 5em;
   }
+  .design-skill i,
+  .coding-skill i {
+    background: #F85032;
+    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
+    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .design-skill > h3,
   .coding-skill > h3 {
     width: 100%;
@@ -297,6 +309,7 @@ p {
   .design-skill .coding-skill li,
   .coding-skill .skill-detail li,
   .coding-skill .coding-skill li {
+    list-style-type: none;
     font-size: 3em;
     color: #555;
     padding-bottom: 1em;
@@ -322,9 +335,6 @@ p {
   }
   .about-child01 h1 {
     text-align: left;
-  }
-  .about-child01 h1 span {
-    color: #A0283A;
   }
   .about-child01 > aside {
     color: #555;
@@ -681,7 +691,11 @@ p {
             align-items: center;
     -webkit-column-gap: 0.1em;
             column-gap: 0.1em;
-    color: #A0283A;
+    background: #F85032;
+    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
+    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 3em;
   }
   .resume .material-symbols-outlined {
@@ -738,13 +752,19 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
     row-gap: 5em;
+    width: 100%;
   }
   .area-4-wrap .mail-wrap > i {
-    color: #A0283A;
+    background: #F85032;
+    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
+    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 10em;
   }
   .area-4-wrap .mail-wrap > div {
-    background-color: #A0283A;
+    background: #f85032;
+    background: linear-gradient(45deg, #f85032 0%, #eab787 100%);
     font-size: 3em;
     text-align: center;
     width: 100%;
@@ -758,7 +778,6 @@ p {
     color: #888;
   }
   .send-email-btn {
-    background-color: #A0283A;
     border-radius: 1em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -939,7 +958,13 @@ p {
     transition: all 0.3s;
   }
   nav ul li a:hover {
-    color: #ea9854;
+    background: #F85032;
+    background: -webkit-gradient(linear, left top, right top, from(#F85032), to(#EAB787));
+    background: linear-gradient(to right, #F85032 0%, #EAB787 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .nav-wrapper,
   .burger-btn-wrap {
@@ -997,16 +1022,29 @@ p {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .circle01 {
+    background: #f85032;
+    background: linear-gradient(45deg, #f85032 0%, #eab787 100%);
+    width: 320px;
+    height: 350px;
+    border-radius: 62% 38% 42% 58% / 41% 46% 54% 59%;
+    opacity: 0.5;
+    margin: -350px 0px;
+  }
   .my-goal-img-wrap {
     padding: 0;
   }
   .mygoal-img {
     width: 320px;
     height: 350px;
-    border-radius: 42% 58% 69% 31% / 41% 40% 60% 59%;
+    border-radius: 47% 53% 68% 32% / 53% 64% 36% 47%;
     -o-object-fit: cover;
        object-fit: cover;
-    z-index: 30;
+  }
+  .work01-img, .work02-img {
+    height: 300px;
+    width: 300px;
+    background-color: #888;
   }
   .social {
     -webkit-box-pack: start;
@@ -1034,6 +1072,9 @@ p {
   .coding-skill {
     width: 300px;
     padding: 10px 0;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1043,6 +1084,9 @@ p {
   }
   .design-skill-child i {
     font-size: 80px;
+  }
+  .work01, .work02 {
+    padding: 0;
   }
   .work-github i {
     font-size: 38px;
@@ -1091,12 +1135,15 @@ p {
   .download-resume a {
     font-size: 21px;
   }
+  .mail-wrap {
+    width: unset;
+  }
   .mail-wrap > a {
     font-size: 21px !important;
   }
   .send-email-btn {
     height: 50px;
-    width: 50px;
+    width: 100%;
     font-size: 32px;
   }
   .send-email-btn a {
@@ -1149,6 +1196,12 @@ p {
   }
   .material-symbols-outlined {
     font-size: 20px;
+  }
+  #area-1 {
+    row-gap: 100px;
+  }
+  .area-4-wrap {
+    width: unset;
   }
 }
 /*# sourceMappingURL=style.css.map */
