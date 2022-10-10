@@ -839,6 +839,9 @@ p {
     height: 10em;
     text-align: center;
   }
+  #footer .info-footer {
+    display: none;
+  }
   #footer p {
     font-size: 2.5em;
   }
@@ -1259,9 +1262,10 @@ p {
     letter-spacing: 1px;
   }
   .info-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: unset !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
