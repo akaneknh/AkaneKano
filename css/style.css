@@ -470,7 +470,7 @@ p {
     background-color: #fff;
   }
   .work01,
-  .work02 {
+  .work02, .work03 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -486,13 +486,13 @@ p {
     width: 90vw;
   }
   .work01 h3,
-  .work02 h3 {
+  .work02 h3, .work03 h3 {
     width: 100%;
     text-align: center;
     color: #333;
   }
   .work01 .work-github,
-  .work02 .work-github {
+  .work02 .work-github, .work03 .work-github {
     height: 3em;
     width: 3em;
   }
@@ -1177,12 +1177,12 @@ p {
     font-size: 80px;
   }
   .work01,
-  .work02 {
-    width: 350px;
+  .work02, .work03 {
+    min-width: 250px !important;
     padding: 0;
   }
   .work01 h4,
-  .work02 h4 {
+  .work02 h4, .work03 h4 {
     width: 100%;
     font-weight: 600;
     text-align: center;
@@ -1347,6 +1347,7 @@ p {
   }
   .area-2-wrap {
     margin: 0;
+    width: 90%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
