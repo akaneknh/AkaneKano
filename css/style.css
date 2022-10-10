@@ -10,18 +10,18 @@ html {
 
 body {
   font-family: "Noto Sans", sans-serif;
-  background-color: #F5F3F1;
+  background-color: #fff;
 }
 
 section:nth-child(1n) {
   row-gap: 50px;
   padding: 5em 0;
-  background-color: #F5F3F1;
+  background-color: #fff;
 }
 
 section:nth-child(2n) {
   padding: 5em 0;
-  background: #fff;
+  background: #F5F3F1;
 }
 
 p {
@@ -277,11 +277,7 @@ p {
   }
   .design-skill i,
   .coding-skill i {
-    color: #E16E36;
-  }
-  .design-skill .fa-code,
-  .coding-skill .fa-code {
-    color: #6B92B9;
+    color: #555;
   }
   .design-skill h3,
   .coding-skill h3 {
@@ -457,6 +453,22 @@ p {
     padding: 5em 5em;
     row-gap: 2em;
   }
+  .work-img, .work-img {
+    height: 30vh;
+    width: 95vw;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+  }
   .work01,
   .work02 {
     display: -webkit-box;
@@ -466,11 +478,17 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     row-gap: 20px;
     padding-bottom: 5em;
+    width: 90vw;
   }
   .work01 h3,
   .work02 h3 {
+    width: 100%;
+    text-align: center;
     color: #333;
   }
   .work01 .work-github,
@@ -478,9 +496,23 @@ p {
     height: 3em;
     width: 3em;
   }
-  iframe {
-    height: 250px;
-    width: 450px;
+  .work-link {
+    padding-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 5em;
+            column-gap: 5em;
+  }
+  .work-link a {
+    font-weight: 500;
+    font-size: 3em;
+    color: #E16E36;
   }
   .area-1,
   .area-2,
@@ -952,7 +984,6 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #fff;
     text-align: center;
     padding-right: 10%;
   }
@@ -1058,10 +1089,10 @@ p {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .work01-img, .work02-img {
-    height: 300px;
-    width: 300px;
-    background-color: #888;
+  .work-img {
+    height: 250px;
+    width: 100%;
+    padding: 0;
   }
   .social {
     -webkit-box-pack: start;
@@ -1145,8 +1176,33 @@ p {
   .design-skill-child i {
     font-size: 80px;
   }
-  .work01, .work02 {
+  .work01,
+  .work02 {
+    width: 350px;
     padding: 0;
+  }
+  .work01 h4,
+  .work02 h4 {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+  }
+  .work-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: flex;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .work-link a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #E16E36;
   }
   .work-github i {
     font-size: 38px;
@@ -1291,19 +1347,24 @@ p {
   }
   .area-2-wrap {
     margin: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .featured-work {
-    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
+    margin: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-column-gap: 150px;
-            column-gap: 150px;
-    max-width: 900px;
+    -webkit-column-gap: 100px;
+            column-gap: 100px;
     -webkit-box-align: unset !important;
         -ms-flex-align: unset !important;
             align-items: unset !important;
@@ -1316,6 +1377,28 @@ p {
   }
   .area-4-wrap {
     width: unset;
+  }
+  /*ふわっと表示*/
+  .aboutme-wrap,
+  .featured-work,
+  .area-1-wrap,
+  .area-3-child-wrap {
+    /* 最初は非表示 */
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+    transition: transform 1s, opacity 1s, visibility 1s;
+    transition: transform 1s, opacity 1s, visibility 1s, -webkit-transform 1s;
+  }
+  /* フェードイン時に入るクラス */
+  .is-fadein {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -11,4 +11,17 @@ $(function () {
   });
   });
 
+// Scrool Action
+$(function () {
+  $(window).scroll(function () {
+    const windowHeight = $(window).height();
+    const scroll = $(window).scrollTop();
 
+    $('.aboutme-wrap, .featured-work, .area-1-wrap, .area-3-child-wrap').each(function () {
+      const targetPosition = $(this).offset().top;
+      if (scroll > targetPosition - windowHeight + 100) {
+        $(this).addClass("is-fadein");
+      }
+    });
+  });
+});

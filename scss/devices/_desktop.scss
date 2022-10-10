@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+
     text-align: center;
     padding-right: 10%;
   }
@@ -30,7 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    li{
+
+    li {
       display: flex;
       justify-content: center;
     }
@@ -50,7 +51,7 @@
   nav ul li a:hover {
     opacity: $hovOpt;
     transition: 0.3s;
-    
+
   }
 
   .nav-wrapper,
@@ -119,16 +120,17 @@
   .mygoal-img {
     width: 320px;
     height: 350px;
-    border-radius: 47% 53% 68% 32% / 53% 64% 36% 47% ;
+    border-radius: 47% 53% 68% 32% / 53% 64% 36% 47%;
     object-fit: cover;
-  
+
   }
 
-.work01-img, .work02-img {
-  height: 300px;
-  width: 300px;
-  background-color: #888;
-}
+  .work-img {
+    height: 250px;
+    width: 100%;
+    padding: 0;
+   
+  }
 
   .social {
     justify-content: flex-start;
@@ -141,49 +143,52 @@
 
   }
 
-.send-email-btn-nav{ 
-height: unset;
-border-radius: 5px;
+  .send-email-btn-nav {
+    height: unset;
+    border-radius: 5px;
 
- a{
-  color: #fff;
-  border-radius: 5px;
-  display: flex;
-  padding: 10px 15px;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 5px;
-  background-color: $prColor;
-}
-}
+    a {
+      color: #fff;
+      border-radius: 5px;
+      display: flex;
+      padding: 10px 15px;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 5px;
+      background-color: $prColor;
+    }
+  }
+
   .aboutme-wrap {
     flex-direction: row;
-padding: 0;
-column-gap: 100px;
+    padding: 0;
+    column-gap: 100px;
     justify-content: space-around;
 
   }
 
-.about-text-wrap {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  p {
-    text-align: center;
-    font-size: 18px;
-    width: 400px;
+  .about-text-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      width: 400px;
+    }
   }
-}
+
   .design-skill,
   .coding-skill {
-     width: 300px;
+    width: 300px;
     padding: 10px 0;
     justify-content: unset;
     align-items: center;
-    
+
     h5 {
-      display: unset!important;
-      font-size: 21px!important;
+      display: unset !important;
+      font-size: 21px !important;
       font-weight: 600;
     }
 
@@ -193,13 +198,35 @@ column-gap: 100px;
 
   .design-skill-child {
     row-gap: 35px !important;
+
     i {
       font-size: 80px;
     }
   }
 
-  .work01, .work02 {
+  .work01,
+  .work02 {
+    width: 350px;
     padding: 0;
+    h4{
+      width: 100%;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+
+  .work-link {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    column-gap: 30px;
+
+    a {
+      font-weight: 500;
+      font-size: 18px;
+      color: $prColor;
+    }
+
   }
 
   .work-github {
@@ -262,9 +289,11 @@ column-gap: 100px;
       font-size: 21px;
     }
   }
-.mail-wrap {
-  width: unset;
-}
+
+  .mail-wrap {
+    width: unset;
+  }
+
   .mail-wrap>a {
     font-size: 21px !important;
   }
@@ -278,22 +307,26 @@ column-gap: 100px;
       font-size: 21px;
     }
   }
-  #area-4{
+
+  #area-4 {
 
     padding-bottom: 200px;
   }
-  .skill-detail{
 
-   row-gap: 5px!important;
-   ul {
-  padding-bottom:20px ;
-    li {
-    font-size: 18px!important;
-    padding: 5px!important;
+  .skill-detail {
+
+    row-gap: 5px !important;
+
+    ul {
+      padding-bottom: 20px;
+
+      li {
+        font-size: 18px !important;
+        padding: 5px !important;
+      }
+
     }
-
   }
-}
 
   .education-card {
     padding: 0;
@@ -325,20 +358,24 @@ column-gap: 100px;
 
     }
   }
+
   .info-footer {
-    display: unset!important;
-    display: flex!important;
+    display: unset !important;
+    display: flex !important;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     row-gap: 5px;
     letter-spacing: 0.5px;
+
     aside {
       color: #fff;
       font-size: 18px;
-      a {    
+
+      a {
         color: #fff;
       }
+
       a:hover {
         opacity: $hovOpt;
       }
@@ -348,22 +385,27 @@ column-gap: 100px;
   // reason to work with me 
   .area-2-wrap {
     margin: 0;
+    justify-content: center;
   }
 
   .featured-work {
+    
+    display: flex;
+    flex-direction: row!important;
     margin: 0;
-    flex-direction:
-      row !important;
     justify-content: center;
-    column-gap: 150px;
-    max-width: 900px;
+    column-gap: 100px;
+  
     align-items: unset !important;
   }
+
+  
 
 
   .material-symbols-outlined {
     font-size: 20px;
   }
+
   #area-1 {
     row-gap: 100px;
   }
@@ -371,5 +413,30 @@ column-gap: 100px;
   .area-4-wrap {
     width: unset;
   }
+
+
+  /*ふわっと表示*/
+
+  .aboutme-wrap,
+  .featured-work,
+  .area-1-wrap,
+  .area-3-child-wrap {
+    /* 最初は非表示 */
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 1s, opacity 1s, visibility 1s;
+
+  }
+
+  /* フェードイン時に入るクラス */
+  .is-fadein {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+
 
 }

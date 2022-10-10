@@ -11,19 +11,19 @@ html {
 
 body {
   font-family: $defaultFont;
-  background-color: $bgColorL;
+  background-color: #fff;
 }
 
 
 section:nth-child(1n) {
   row-gap: 50px;
   padding: 5em 0;
-  background-color: $bgColorL;
+  background-color: #fff;
 }
 
 section:nth-child(2n) {
   padding: 5em 0;
-  background: #fff;
+  background: $bgColorL;
 }
 
 
