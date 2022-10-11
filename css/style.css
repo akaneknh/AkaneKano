@@ -65,14 +65,12 @@ p {
     font-size: 3.5em;
     color: #888;
     font-weight: 500;
-    letter-spacing: 0.2px;
   }
   body h5 {
     font-size: 3em;
     font-weight: 500;
     color: #888;
     font-weight: 400;
-    letter-spacing: 0.2px;
   }
   section:nth-child(1n) {
     padding: 5em 5em;
@@ -326,7 +324,6 @@ p {
   .about-text-wrap p {
     width: 90%;
     text-align: center;
-    font-size: 3em;
   }
   .about-child01 {
     display: -webkit-box;
@@ -433,10 +430,9 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: unset !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -448,7 +444,7 @@ p {
   }
   .work-img,
   .work-img {
-    height: 30vh;
+    height: 35vh !important;
     width: 95vw;
     -o-object-fit: cover;
        object-fit: cover;
@@ -478,7 +474,7 @@ p {
             align-items: center;
     row-gap: 3em;
     padding-bottom: 5em;
-    width: 90vw;
+    min-width: 90vw;
   }
   .work01 h4,
   .work02 h4,
@@ -509,7 +505,7 @@ p {
   }
   .work-link a {
     font-weight: 500;
-    font-size: 3em;
+    font-size: 3em !important;
     color: #E16E36;
   }
   .area-1,
@@ -884,51 +880,11 @@ p {
   #footer p {
     font-size: 2.5em;
   }
-  .more {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .more__content {
-    height: auto;
-    max-height: 10em;
-    overflow: hidden;
-    -webkit-transition: 1s;
-    transition: 1s;
-  }
-  .more__content::after {
-    content: '';
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: 1.5s;
-    transition: 1.5s;
-    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#ffffff));
-    background: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
-  }
-  .more__content.open:after {
-    z-index: -1;
-    opacity: 0;
-  }
-  .more__btn {
-    color: #ffffff;
-    background-color: #00c2bc;
-    cursor: pointer;
-  }
 }
 
 @media (min-width: 700px) {
   body p {
-    font-size: 1.5em !important;
+    font-size: 1.5em;
     color: #888;
     font-weight: 500;
     line-height: 1.2em;
@@ -1042,17 +998,17 @@ p {
 
 @media (min-width: 1000px) {
   body p {
-    font-size: 1.2em !important;
+    font-size: 1.2em;
     color: #888;
     font-weight: 500;
     line-height: 1.5em;
   }
   body li {
-    font-size: 2em !important;
+    font-size: 2em;
     font-weight: 500;
   }
   body h1 {
-    font-size: 48px !important;
+    font-size: 48px;
     font-weight: 600;
     color: #333;
     line-height: 1.5em;
@@ -1064,17 +1020,17 @@ p {
     font-weight: 600;
   }
   body h3 {
-    font-size: 2em !important;
+    font-size: 2em;
     color: #555;
     font-weight: 500;
   }
   body h4 {
-    font-size: 1.8em !important;
+    font-size: 1.8em;
     color: #555;
     font-weight: 500;
   }
   body h5 {
-    font-size: 1.2em !important;
+    font-size: 1.2em;
     color: #888;
   }
   #header {
@@ -1166,6 +1122,7 @@ p {
             flex-direction: row;
     -webkit-column-gap: 80px;
             column-gap: 80px;
+    max-width: 80%;
   }
   .area-1-wrap-child {
     -webkit-box-pack: unset;
@@ -1286,7 +1243,7 @@ p {
   }
   .work01,
   .work02, .work03 {
-    width: 25%;
+    min-width: 25%;
     row-gap: 2em;
     padding: 0;
   }
@@ -1327,7 +1284,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 800px;
+    max-width: 80%;
     padding: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1345,8 +1302,15 @@ p {
     padding: 0;
     margin: 0;
   }
+  .school h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+  }
   .location-wrap {
     row-gap: 0.5em;
+  }
+  .location-wrap h5 {
+    font-size: 1em;
   }
   .location-wrap span {
     font-size: 1em !important;
@@ -1468,7 +1432,7 @@ p {
         -ms-flex-align: center;
             align-items: center;
     row-gap: 5em;
-    width: 80%;
+    max-width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1516,7 +1480,6 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 70%;
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
     opacity: 0;

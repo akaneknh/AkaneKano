@@ -31,7 +31,7 @@
     font-size: 3.5em;
     color:$lBlack;
     font-weight: 500;
-    letter-spacing: 0.2px;
+   
   }
 
   h5{
@@ -39,13 +39,13 @@
     font-weight: 500;
     color:$lBlack;
     font-weight: 400;
-    letter-spacing: 0.2px;
+ 
   }
 }
 
 @mixin tabletFont{
   p{
-    font-size: 1.5em!important;
+    font-size: 1.5em;
     color: $lBlack;
     font-weight: 500;
     line-height: 1.2em;
@@ -89,18 +89,18 @@
   }
 @mixin desktopFont{
   p {
-    font-size: 1.2em!important;
+    font-size: 1.2em;
     color: $lBlack;
     font-weight: 500;
     line-height: 1.5em;
     }
   
     li {
-      font-size: 2em!important;
+      font-size: 2em;
       font-weight: 500;
     }
     h1{
-      font-size:48px!important;
+      font-size:48px;
       font-weight: 600;
       color: $dBlack;
       line-height: 1.5em;
@@ -112,21 +112,20 @@
       font-weight: 600;
     }
     h3 {
-      font-size:2em!important;
+      font-size:2em;
       color:$mBlack;
       font-weight: 500;
     }
 
     h4{
-      font-size: 1.8em!important;
+      font-size: 1.8em;
       color:$mBlack;
       font-weight: 500;
 
     }
   
     h5{
-      font-size: 1.2em!important;
-      // font-weight: 500;
+      font-size: 1.2em;
       color:$lBlack;
     
     }

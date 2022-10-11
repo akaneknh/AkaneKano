@@ -79,6 +79,7 @@
     padding: 0;
     flex-direction: row;
     column-gap: 80px;
+    max-width: 80%;
   }
 
   .area-1-wrap-child {
@@ -186,7 +187,7 @@
 
   .work01,
   .work02, .work03  {
-    width:25%;
+    min-width:25%;
     row-gap: 2em;
     padding: 0;
     h4{
@@ -223,7 +224,7 @@
 
   .area-3-child-wrap {
     flex-direction: row;
-    width: 800px;
+    max-width: 80%;
     padding: 0;
     justify-content: space-around;
     align-items: flex-start;
@@ -244,12 +245,19 @@
   .school {
     padding: 0;
     margin: 0;
+    h4 {
+      font-size: 1.5em;
+      font-weight: 600;
+    }
 
   
   }
 
   .location-wrap {
    row-gap: 0.5em;
+   h5 {
+    font-size: 1em;
+   }
 
     span {
       font-size: 1em!important;
@@ -359,13 +367,15 @@
   }
 
 
+
+
   .area-2-wrap {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 5em;
-    width: 100%!important;
+    max-width: 80%;
     justify-content: center;
     h2 {
       padding: 0;
@@ -392,7 +402,6 @@
   }
 
   #area-1 {
-    
     row-gap: 5em;
   }
 
@@ -408,7 +417,7 @@
   .area-3-child-wrap {
     display: flex;
     justify-content: center;
-    width: 100%;
+  
     transform: translateY(30px);
     opacity: 0;
     visibility: hidden;
