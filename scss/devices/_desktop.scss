@@ -6,11 +6,13 @@
 
 
   #header {
-    height: 100px;
-    // width: 100%;
+    height: 7em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  }
+  section {
+    padding: 6em!important;
   }
 
   .desktop-header {
@@ -39,7 +41,7 @@
     text-decoration: none;
     margin: 0 15px;
     column-gap: 10px;
-    font-size: 18px;
+    font-size: 18px!important;
     transition: all 0.3s;
   }
 
@@ -56,12 +58,11 @@
 
 
   // About
-
+ 
   .about {
     align-items: flex-start;
     width: 70%;
     padding: 0;
-
     h1 {
       width: 100%;
       text-align: left;
@@ -120,7 +121,7 @@
     padding: 0;
 
     i {
-      font-size: 42px;
+      font-size: 42px!important;
     }
 
   }
@@ -152,26 +153,23 @@
   .about-text-wrap {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 2em;
 
     p {
       text-align: center;
-      font-size: 18px;
       width: 400px;
     }
   }
 
   .design-skill,
   .coding-skill {
-    width: 300px;
-    padding: 10px 0;
+    width: 30em;
+    row-gap: 2em;
     justify-content: unset;
     align-items: center;
 
     h5 {
       display: unset !important;
-      font-size: 21px !important;
-      font-weight: 600;
     }
 
   }
@@ -179,18 +177,17 @@
 
 
   .design-skill-child {
-    row-gap: 35px !important;
+    row-gap: 3em !important;
 
     i {
-      font-size: 80px;
+      font-size: 5em!important;
     }
   }
 
   .work01,
   .work02, .work03  {
-    width: 25%;
-    row-gap: 20px;
-    // min-width: 250px!important;
+    width:25%;
+    row-gap: 2em;
     padding: 0;
     h4{
       width: 100%;
@@ -203,20 +200,24 @@
     display: flex;
     flex-direction: row;
     display: flex;
-    column-gap: 30px;
+    column-gap: 3em;
     padding-top: 0;
 
     a {
       font-weight: 500;
-      font-size: 18px;
+      font-size:3em !important;
       color: $prColor;
+    }
+    a:hover {
+      opacity: $hovOpt;
+      transition: 0.3s;
     }
 
   }
 
   .work-github {
     i {
-      font-size: 38px;
+      font-size: 38px!important;
     }
   }
 
@@ -228,14 +229,14 @@
     align-items: flex-start;
 
     .material-symbols-outlined {
-      font-size: 100px;
+      font-size: 100px!important;
     }
   }
 
 
   .educatio-n01 {
     h5 {
-      font-size: 18px;
+      font-size: 18px!important;
     }
 
   }
@@ -244,23 +245,14 @@
     padding: 0;
     margin: 0;
 
-    h4 {
-      font-size: 24px;
-    }
+  
   }
 
   .location-wrap {
-    h5 {
-      font-weight: 600;
-    }
-
-    h5,
-    h4 {
-      font-size: 18px;
-    }
+   row-gap: 0.5em;
 
     span {
-      font-size: 14px;
+      font-size: 1em!important;
     }
   }
 
@@ -271,7 +263,7 @@
     margin-top: 20px;
 
     a {
-      font-size: 21px;
+      font-size: 21px!important;
     }
   }
 
@@ -295,19 +287,17 @@
 
   #area-4 {
 
-    padding-bottom: 200px;
+    padding-bottom: 10em;
   }
 
   .skill-detail {
-
-    row-gap: 5px !important;
+    flex-direction: row!important;
+    column-gap: 2em !important;
 
     ul {
-      padding-bottom: 20px;
-
       li {
-        font-size: 18px !important;
-        padding: 5px !important;
+        font-size: 1.2em!important;
+       line-height: 2em !important;
       }
 
     }
@@ -315,10 +305,11 @@
 
   .education-card {
     padding: 0;
-    width: 200px;
+    width: 25%;
   }
 
   .education-01 {
+ 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -338,7 +329,7 @@
     p {
       color: #fff;
       opacity: 0.8;
-      font-size: 14px;
+      font-size: 14px!important;
       letter-spacing: 1px;
 
     }
@@ -355,7 +346,7 @@
 
     aside {
       color: #fff;
-      font-size: 18px;
+      font-size: 18px!important;
 
       a {
         color: #fff;
@@ -370,19 +361,26 @@
 
   .area-2-wrap {
     margin: 0;
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5em;
+    width: 100%!important;
     justify-content: center;
+    h2 {
+      padding: 0;
+    }
   }
 
   .featured-work {
-    
+   
     display: flex;
     flex-wrap:wrap;
     flex-direction: row!important;
     margin: 0;
     justify-content: center;
-    column-gap: 100px;
-    row-gap: 100px!important;
+    column-gap: 5em;
+    row-gap: 5em!important;
     align-items: unset !important;
   }
 
@@ -390,11 +388,12 @@
 
 
   .material-symbols-outlined {
-    font-size: 20px;
+    font-size: 2em!important;
   }
 
   #area-1 {
-    row-gap: 100px;
+    
+    row-gap: 5em;
   }
 
   .area-4-wrap {
@@ -407,6 +406,9 @@
   .featured-work,
   .area-1-wrap,
   .area-3-child-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     transform: translateY(30px);
     opacity: 0;
     visibility: hidden;
@@ -419,7 +421,9 @@
     visibility: visible;
   }
 
+.area-3-wrap {
+padding: 0;
+width: 100%;
 
-
-
+}
 }

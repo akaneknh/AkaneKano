@@ -2,6 +2,84 @@
   body {
   @include tabletFont
   }
+.aboutme-wrap {
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 5em;
+}
+.design-skill, .coding-skill {
+  justify-content: unset;
+  padding: 0;
+  row-gap: 1em;
+  width: 280px;
+}
+
+.featured-work {
+  flex-direction: row!important;
+  flex-wrap: wrap;
+  column-gap: 5em;
+  padding: 0!important;
+  align-items: unset!important;
+
+}
+
+.work01,
+.work02, .work03  {
+  width: 25vw;
+  row-gap: 1em;
+
+}
+
+.work-img {
+  height:350px;
+  width: 100%;
+  padding: 0;
+ 
+}
+
+.skill-detail ul li {
+  font-size: 1.5em!important;
+  padding: 0!important;
+  line-height: 1.5em;
+  font-weight: 500;
+}
+
+.work-link {
+  font-size: 0.3em;
+}
+
+.school {
+  padding: 0;
+  h4 {
+    font-size: 2.5em;
+  }
+}
+.location-wrap {
+  h5 {
+    font-size: 1.8em;
+  }
+  span {
+    font-size: 1.5em;
+  }
+}
+
+
+.education-01 {
+  row-gap: 1em;
+}
+
+
+.mail-wrap {
+  font-size: 0.8em;
+  width: 30em!important;
+  height: 7em!important;
+}
+
+#footer {
+  p {
+    font-size: 1.5em!important;
+  }
+}
 
   }
  
