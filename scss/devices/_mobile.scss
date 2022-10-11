@@ -1,6 +1,49 @@
 @media (min-width: 300px) {
   body {
     @include mobileFont;
+    p{
+      font-size: 3rem;
+
+      font-weight: 500;
+      line-height: 1.5em;
+      }
+    
+      li {
+        font-size: 3em;
+        font-weight: 600;
+      }
+      h1{
+        font-size:5.5em;
+        font-weight: 600;
+    
+        line-height: 1.5em;
+      }
+      
+      h2{
+        font-size: 4em;
+        text-align: center;
+
+        font-weight: 600;
+      }
+      h3 {
+        font-size: 4em;
+ 
+        font-weight: 600;
+      }
+      h4{
+        font-size: 3.5em;
+  
+        font-weight: 500;
+       
+      }
+    
+      h5{
+        font-size: 3em;
+        font-weight: 500;
+  
+        font-weight: 400;
+     
+      }
 
   }
 

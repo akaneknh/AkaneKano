@@ -35,8 +35,25 @@ p {
 
 @media (min-width: 300px) {
   body p {
-    font-size: 3rem;
     color: #888;
+  }
+  body h1 {
+    color: #333;
+  }
+  body h2 {
+    color: #333;
+  }
+  body h3 {
+    color: #555;
+  }
+  body h4 {
+    color: #555;
+  }
+  body h5 {
+    color: #888;
+  }
+  body p {
+    font-size: 3rem;
     font-weight: 500;
     line-height: 1.5em;
   }
@@ -47,29 +64,24 @@ p {
   body h1 {
     font-size: 5.5em;
     font-weight: 600;
-    color: #333;
     line-height: 1.5em;
   }
   body h2 {
-    font-size: 5em;
+    font-size: 4em;
     text-align: center;
-    color: #333;
     font-weight: 600;
   }
   body h3 {
     font-size: 4em;
-    color: #555;
     font-weight: 600;
   }
   body h4 {
     font-size: 3.5em;
-    color: #888;
     font-weight: 500;
   }
   body h5 {
     font-size: 3em;
     font-weight: 500;
-    color: #888;
     font-weight: 400;
   }
   section:nth-child(1n) {
@@ -884,38 +896,50 @@ p {
 
 @media (min-width: 700px) {
   body p {
-    font-size: 1.5em;
     color: #888;
+  }
+  body h1 {
+    color: #333;
+  }
+  body h2 {
+    color: #333;
+  }
+  body h3 {
+    color: #555;
+  }
+  body h4 {
+    color: #555;
+  }
+  body h5 {
+    color: #888;
+  }
+  body p {
+    font-size: 1.8em;
     font-weight: 500;
     line-height: 1.2em;
   }
   body h1 {
     font-size: 4em;
     font-weight: 600;
-    color: #333;
     line-height: 1.5em;
   }
   body h2 {
     font-size: 3em;
     text-align: center;
-    color: #333;
     font-weight: 600;
   }
   body h3 {
     font-size: 2em;
-    color: #555;
     font-weight: 600;
   }
   body h4 {
     font-size: 1.8em;
-    color: #888;
     font-weight: 500;
     letter-spacing: 0.2px;
   }
   body h5 {
     font-size: 0.5em;
     font-weight: 500;
-    color: #888;
     font-weight: 400;
     letter-spacing: 0.2px;
   }
@@ -969,7 +993,7 @@ p {
     font-weight: 500;
   }
   .work-link {
-    font-size: 0.3em;
+    font-size: 0.5em;
   }
   .school {
     padding: 0;
@@ -998,8 +1022,25 @@ p {
 
 @media (min-width: 1000px) {
   body p {
-    font-size: 1.2em;
     color: #888;
+  }
+  body h1 {
+    color: #333;
+  }
+  body h2 {
+    color: #333;
+  }
+  body h3 {
+    color: #555;
+  }
+  body h4 {
+    color: #555;
+  }
+  body h5 {
+    color: #888;
+  }
+  body p {
+    font-size: 1.2em;
     font-weight: 500;
     line-height: 1.5em;
   }
@@ -1010,28 +1051,23 @@ p {
   body h1 {
     font-size: 48px;
     font-weight: 600;
-    color: #333;
     line-height: 1.5em;
   }
   body h2 {
     font-size: 3em;
     text-align: center;
-    color: #333;
     font-weight: 600;
   }
   body h3 {
     font-size: 2em;
-    color: #555;
     font-weight: 500;
   }
   body h4 {
     font-size: 1.8em;
-    color: #555;
     font-weight: 500;
   }
   body h5 {
     font-size: 1.2em;
-    color: #888;
   }
   #header {
     height: 7em;
@@ -1215,6 +1251,9 @@ p {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 2em;
+  }
+  .about-text-wrap h2 {
+    font-size: 4em;
   }
   .about-text-wrap p {
     text-align: center;
