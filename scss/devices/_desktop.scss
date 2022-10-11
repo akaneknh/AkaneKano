@@ -76,6 +76,7 @@
 
   .area-1-wrap {
     padding: 0;
+    flex-direction: row;
     column-gap: 80px;
   }
 
@@ -105,22 +106,6 @@
     object-fit: cover;
 
   }
-
-
-
-  .my-goal-img-wrap {
-    padding: 0;
-  }
-
-  .mygoal-img {
-    width: 320px;
-    height: 350px;
-    border-radius: 47% 53% 68% 32% / 53% 64% 36% 47%;
-    object-fit: cover;
-
-  }
-
-
 
   .work-img {
     height: 250px;
@@ -204,6 +189,7 @@
   .work01,
   .work02, .work03  {
     width: 25%;
+    row-gap: 20px;
     // min-width: 250px!important;
     padding: 0;
     h4{
@@ -218,6 +204,7 @@
     flex-direction: row;
     display: flex;
     column-gap: 30px;
+    padding-top: 0;
 
     a {
       font-weight: 500;

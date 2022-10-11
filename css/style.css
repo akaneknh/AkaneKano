@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 10px;
 }
 
 body {
@@ -34,7 +35,7 @@ p {
 
 @media (min-width: 300px) {
   body p {
-    font-size: 4em;
+    font-size: 3rem;
     font-weight: 500;
     line-height: 1.5em;
   }
@@ -73,11 +74,11 @@ p {
     letter-spacing: 0.2px;
   }
   section:nth-child(1n) {
-    padding: 5em 2em;
+    padding: 5em 5em;
     background-color: #fff;
   }
   section:nth-child(2n) {
-    padding: 5em 2em;
+    padding: 5em 5em;
   }
   section {
     display: -webkit-box;
@@ -93,6 +94,7 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    row-gap: 5em;
   }
   .desktop-header {
     display: none;
@@ -364,8 +366,7 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .profile-img01,
-  .mygoal-img {
+  .profile-img01 {
     width: 80vw;
     height: 40vh;
     -o-object-fit: cover;
@@ -549,6 +550,16 @@ p {
             justify-content: center;
     padding: 0 5em;
     row-gap: 5em;
+  }
+  .area-1-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 6em !important;
   }
   .area-1-wrap h2,
   .area-2-wrap h2,
@@ -1036,6 +1047,10 @@ p {
   }
   .area-1-wrap {
     padding: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-column-gap: 80px;
             column-gap: 80px;
   }
@@ -1069,16 +1084,6 @@ p {
     width: 320px;
     height: 350px;
     border-radius: 62% 38% 42% 58% / 41% 46% 54% 59%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .my-goal-img-wrap {
-    padding: 0;
-  }
-  .mygoal-img {
-    width: 320px;
-    height: 350px;
-    border-radius: 47% 53% 68% 32% / 53% 64% 36% 47%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1172,6 +1177,7 @@ p {
   .work01,
   .work02, .work03 {
     width: 25%;
+    row-gap: 20px;
     padding: 0;
   }
   .work01 h4,
@@ -1191,6 +1197,7 @@ p {
     display: flex;
     -webkit-column-gap: 30px;
             column-gap: 30px;
+    padding-top: 0;
   }
   .work-link a {
     font-weight: 500;

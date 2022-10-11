@@ -7,12 +7,12 @@
 
 
   section:nth-child(1n) {
-    padding: 5em 2em;
+    padding: 5em 5em;
     background-color: #fff;
   }
 
   section:nth-child(2n) {
-    padding: 5em 2em;
+    padding: 5em 5em;
   }
 
 
@@ -21,6 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 5em;
   }
 
   .desktop-header {
@@ -275,8 +276,7 @@
   }
 
 
-  .profile-img01,
-  .mygoal-img {
+  .profile-img01 {
     width: 80vw;
     height: 40vh;
     object-fit: cover;
@@ -410,6 +410,11 @@
     justify-content: center;
     padding: 0 5em;
     row-gap: 5em;
+  }
+  .area-1-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6em!important;
   }
 
   .area-1-wrap,
