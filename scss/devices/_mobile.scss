@@ -5,10 +5,16 @@
   }
 
 
-  section:nth-child(1) {
-    padding-top: 50px;
-    padding-bottom: 5%;
+
+  section:nth-child(1n) {
+    padding: 5em 2em;
+    background-color: #fff;
   }
+
+  section:nth-child(2n) {
+    padding: 5em 2em;
+  }
+
 
   section {
     display: flex;
@@ -20,7 +26,7 @@
   .desktop-header {
     display: none;
   }
-
+ 
   button {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -37,23 +43,21 @@
     vertical-align: middle;
   }
 
-  /* ------------------ */
-  /* humberger-menu */
-  /* ------------------ */
 
-  /* 以下、ハンバーガーボタン */
+  /* humberger-menu */
+
   .burger-btn-wrap {
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 100%;
+
   }
 
   .burger-btn {
     position: fixed;
     display: block;
-    right: 5em;
-    top: 5em;
+    right: 6em;
+    top: 6em;
     z-index: 3;
   }
 
@@ -99,12 +103,12 @@
     transition: transform 0.3s;
   }
 
-  /* スクロール制御 */
+
   .noscroll {
     overflow: hidden;
   }
 
-  /* 以下、ハンバーガーメニュー */
+
   .nav-wrapper {
     visibility: hidden;
     height: 100vh;
@@ -115,13 +119,12 @@
     opacity: 0;
     transition: opacity .5s;
     z-index: 2;
-    /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
   }
 
   .header-nav {
     background: $bgColorL;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     z-index: 2;
   }
 
@@ -149,7 +152,7 @@
 
   }
 
-  /* メニューオープン時 */
+
   .nav-wrapper.fade {
     opacity: 1;
     visibility: visible;
@@ -186,7 +189,8 @@
     }
 
     i {
-      color: $mBlack;;
+      color: $mBlack;
+      ;
 
 
     }
@@ -195,7 +199,7 @@
 
     h3 {
       width: 100% !important;
-      text-align: center!important;
+      text-align: center !important;
     }
 
     .skill-detail,
@@ -225,10 +229,12 @@
 
 
   }
+
   .about-text-wrap {
     display: flex;
     flex-direction: column;
     row-gap: 2em;
+
     p {
       width: 90%;
       text-align: center;
@@ -245,6 +251,7 @@
 
     h1 {
       text-align: left;
+
       span {
         color: $prColor;
       }
@@ -327,27 +334,32 @@
     padding: 5em 5em;
     row-gap: 2em;
   }
-  .work-img, .work-img {
+
+  .work-img,
+  .work-img {
     height: 30vh;
     width: 95vw;
-  
-    object-fit: contain;
+
+    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
   }
+
   .work01,
-  .work02, .work03 {
+  .work02,
+  .work03 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 20px;
+    row-gap: 3em;
     padding-bottom: 5em;
     width: 90vw;
 
-    h3 {
+    h4 {
       width: 100%;
+      font-weight: 600;
       text-align: center;
       color: #333;
     }
@@ -366,12 +378,13 @@
     width: 100%;
     flex-direction: row;
     column-gap: 5em;
+
     a {
       font-weight: 500;
       font-size: 3em;
-      color:  $prColor
+      color: $prColor
     }
-   
+
   }
 
   .area-1,
@@ -379,7 +392,7 @@
   .area-3,
   .area-4,
   .area-1-wrap-child-goal {
-    
+
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -396,7 +409,7 @@
     align-items: center;
     justify-content: center;
     padding: 0 5em;
-    row-gap: 2em;
+    row-gap: 5em;
   }
 
   .area-1-wrap,
@@ -404,9 +417,7 @@
   .area-3-wrap,
   .area-4-wrap {
     h2 {
-
       padding: 1em 0.8em;
-
     }
   }
 
@@ -442,7 +453,7 @@
     justify-content: center;
     align-items: center;
     row-gap: 2em;
-    padding: 5em 5em;
+    // padding: 5em 5em;
 
 
 
@@ -671,9 +682,11 @@
     justify-content: center;
     height: 10em;
     text-align: center;
-   .info-footer {
-    display: none;
-   }
+
+    .info-footer {
+      display: none;
+    }
+
     p {
       font-size: 2.5em;
     }

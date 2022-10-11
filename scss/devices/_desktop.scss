@@ -4,13 +4,10 @@
     @include desktopFont;
   }
 
-  // section:nth-child(1)  {
-
-  // }
 
   #header {
     height: 100px;
-    width: 100%;
+    // width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -20,7 +17,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     padding-right: 10%;
   }
@@ -38,7 +34,7 @@
   }
 
   nav ul li a {
-    display: block;
+    // display: block;
     color: $lBlack;
     text-decoration: none;
     margin: 0 15px;
@@ -51,12 +47,11 @@
   nav ul li a:hover {
     opacity: $hovOpt;
     transition: 0.3s;
-
   }
 
   .nav-wrapper,
-  .burger-btn-wrap {
-    display: none;
+  .burger-btn-wrap, .bar {
+    display: none!important;
   }
 
 
@@ -208,7 +203,8 @@
 
   .work01,
   .work02, .work03  {
-    min-width: 250px!important;
+    width: 25%;
+    // min-width: 250px!important;
     padding: 0;
     h4{
       width: 100%;
@@ -384,7 +380,7 @@
     }
   }
 
-  // reason to work with me 
+
   .area-2-wrap {
     margin: 0;
     width: 90%;
@@ -394,10 +390,12 @@
   .featured-work {
     
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row!important;
     margin: 0;
     justify-content: center;
     column-gap: 100px;
+    row-gap: 100px!important;
     align-items: unset !important;
   }
 
@@ -417,21 +415,17 @@
   }
 
 
-  /*ふわっと表示*/
 
   .aboutme-wrap,
   .featured-work,
   .area-1-wrap,
   .area-3-child-wrap {
-    /* 最初は非表示 */
     transform: translateY(30px);
     opacity: 0;
     visibility: hidden;
     transition: transform 1s, opacity 1s, visibility 1s;
-
   }
 
-  /* フェードイン時に入るクラス */
   .is-fadein {
     transform: translateX(0);
     opacity: 1;

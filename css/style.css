@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,14 +13,11 @@ body {
 }
 
 section:nth-child(1n) {
-  row-gap: 50px;
-  padding: 5em 0;
   background-color: #fff;
 }
 
 section:nth-child(2n) {
-  padding: 5em 0;
-  background: #F5F3F1;
+  background: #F5F3F1 !important;
 }
 
 p {
@@ -76,9 +72,12 @@ p {
     font-weight: 400;
     letter-spacing: 0.2px;
   }
-  section:nth-child(1) {
-    padding-top: 50px;
-    padding-bottom: 5%;
+  section:nth-child(1n) {
+    padding: 5em 2em;
+    background-color: #fff;
+  }
+  section:nth-child(2n) {
+    padding: 5em 2em;
   }
   section {
     display: -webkit-box;
@@ -113,10 +112,7 @@ p {
     padding: 0;
     vertical-align: middle;
   }
-  /* ------------------ */
   /* humberger-menu */
-  /* ------------------ */
-  /* 以下、ハンバーガーボタン */
   .burger-btn-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,13 +123,12 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
   }
   .burger-btn {
     position: fixed;
     display: block;
-    right: 5em;
-    top: 5em;
+    right: 6em;
+    top: 6em;
     z-index: 3;
   }
   .bar {
@@ -179,11 +174,9 @@ p {
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
   }
-  /* スクロール制御 */
   .noscroll {
     overflow: hidden;
   }
-  /* 以下、ハンバーガーメニュー */
   .nav-wrapper {
     visibility: hidden;
     height: 100vh;
@@ -195,12 +188,11 @@ p {
     -webkit-transition: opacity .5s;
     transition: opacity .5s;
     z-index: 2;
-    /*キービジュアルと.btn_triggerとの重なりの前後関係を調整*/
   }
   .header-nav {
     background: #F5F3F1;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     z-index: 2;
   }
   .nav-list {
@@ -222,7 +214,6 @@ p {
     text-decoration: none;
     color: #555;
   }
-  /* メニューオープン時 */
   .nav-wrapper.fade {
     opacity: 1;
     visibility: visible;
@@ -453,11 +444,12 @@ p {
     padding: 5em 5em;
     row-gap: 2em;
   }
-  .work-img, .work-img {
+  .work-img,
+  .work-img {
     height: 30vh;
     width: 95vw;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -470,7 +462,8 @@ p {
     background-color: #fff;
   }
   .work01,
-  .work02, .work03 {
+  .work02,
+  .work03 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -481,18 +474,21 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 20px;
+    row-gap: 3em;
     padding-bottom: 5em;
     width: 90vw;
   }
-  .work01 h3,
-  .work02 h3, .work03 h3 {
+  .work01 h4,
+  .work02 h4,
+  .work03 h4 {
     width: 100%;
+    font-weight: 600;
     text-align: center;
     color: #333;
   }
   .work01 .work-github,
-  .work02 .work-github, .work03 .work-github {
+  .work02 .work-github,
+  .work03 .work-github {
     height: 3em;
     width: 3em;
   }
@@ -552,7 +548,7 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0 5em;
-    row-gap: 2em;
+    row-gap: 5em;
   }
   .area-1-wrap h2,
   .area-2-wrap h2,
@@ -602,7 +598,6 @@ p {
         -ms-flex-align: center;
             align-items: center;
     row-gap: 2em;
-    padding: 5em 5em;
   }
   .area-1-wrap-child h2 {
     width: 100%;
@@ -963,7 +958,6 @@ p {
   }
   #header {
     height: 100px;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1008,7 +1002,6 @@ p {
             justify-content: center;
   }
   nav ul li a {
-    display: block;
     color: #888;
     text-decoration: none;
     margin: 0 15px;
@@ -1024,8 +1017,8 @@ p {
     transition: 0.3s;
   }
   .nav-wrapper,
-  .burger-btn-wrap {
-    display: none;
+  .burger-btn-wrap, .bar {
+    display: none !important;
   }
   .about {
     -webkit-box-align: start;
@@ -1178,7 +1171,7 @@ p {
   }
   .work01,
   .work02, .work03 {
-    min-width: 250px !important;
+    width: 25%;
     padding: 0;
   }
   .work01 h4,
@@ -1356,6 +1349,8 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
@@ -1366,6 +1361,7 @@ p {
             justify-content: center;
     -webkit-column-gap: 100px;
             column-gap: 100px;
+    row-gap: 100px !important;
     -webkit-box-align: unset !important;
         -ms-flex-align: unset !important;
             align-items: unset !important;
@@ -1379,12 +1375,10 @@ p {
   .area-4-wrap {
     width: unset;
   }
-  /*ふわっと表示*/
   .aboutme-wrap,
   .featured-work,
   .area-1-wrap,
   .area-3-child-wrap {
-    /* 最初は非表示 */
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
     opacity: 0;
@@ -1394,7 +1388,6 @@ p {
     transition: transform 1s, opacity 1s, visibility 1s;
     transition: transform 1s, opacity 1s, visibility 1s, -webkit-transform 1s;
   }
-  /* フェードイン時に入るクラス */
   .is-fadein {
     -webkit-transform: translateX(0);
             transform: translateX(0);
