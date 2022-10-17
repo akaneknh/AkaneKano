@@ -28,6 +28,24 @@ section:nth-child(2n) {
   background-color: #F5F3F1;
 }
 
+.design-skill, .webdev-skill, .work, .reason-card, .experience-card {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+  transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s, visibility 1s;
+  transition: transform 1s, opacity 1s, visibility 1s, -webkit-transform 1s;
+}
+
+.is-fadein {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (min-width: 300px) {
   body h1 {
     color: #333;

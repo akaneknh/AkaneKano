@@ -29,3 +29,17 @@ section:nth-child(2n) {
 #footer {
   background-color: $bgColor;
 }
+
+// JS
+.design-skill, .webdev-skill, .work, .reason-card, .experience-card {
+transform: translateY(30px);
+opacity: 0;
+visibility: hidden;
+transition: transform 1s, opacity 1s, visibility 1s;
+}
+
+.is-fadein {
+transform: translateX(0);
+opacity: 1;
+visibility: visible;
+}
