@@ -1,124 +1,174 @@
 @media (min-width: 700px) {
   body {
   @include tabletFont;
-  p{
-    font-size: 1.8em;
-    font-weight: 500;
-    line-height: 1.2em;
-    }
   
- 
-    h1{
-      font-size:4em;
-      font-weight: 600;
- 
-      line-height: 1.5em;
-    }
-    h2{
-      font-size: 3em;
-      text-align: center;
-     
-      font-weight: 600;
-    }
-    h3 {
-      font-size: 2em;
-
-      font-weight: 600;
-    }
-    h4{
-      font-size: 1.8em;
-
-      font-weight: 500;
-      letter-spacing: 0.2px;
-    }
-  
-    h5{
-      font-size: 0.5em;
-      font-weight: 500;
-    
-      font-weight: 400;
-      letter-spacing: 0.2px;
-    }
+  }
+  // ---------------------
+  /* humberger-menu start */
+  // --------------------
+  .burger-btn {
+    position: fixed;
+    display: block;
+    right: 45px;
+    top: 60px;
+    z-index: 3;
+  }
+  .bar {
+    height: 7px;
+    width: 50px;
   }
 
-.aboutme-wrap {
+  .bar_top {
+    top: 15px;
+  }
+
+  .bar_mid {
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .bar_bottom {
+    bottom: 15px;
+  }
+
+  .burger-btn.close .bar_top {
+    transform: translate(-50%, -18px) rotate(45deg);
+    transition: transform 0.3s;
+  }
+  .burger-btn.close .bar_bottom {
+    transform: translate(-50%, 18px) rotate(-45deg);
+    transition: transform 0.3s;
+  }
+  .nav-list {
+    font-size: $h4FSt;
+  }
+  .nav-item {
+    margin-bottom: 2em;
+
+    a {
+      font-size: 28px;
+      color: $pCt;
+    }
+
+  }
+
+
+  // SECTION1
+  .section1-title-wrap {
+    padding: 150px 10vw;
+    row-gap: 50px;
+
+  }
+
+  .hero-detail {
+    row-gap: 50px;
+  }
+
+ .hero-link {
+   column-gap: 30px;
+   a {
+    font-size: 42px;
+   }
+   .sub-title {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+ }
+
+
+  .hero-wrap {
+    height: 300px;
+
+  }
+  .hero-img-wrap {
+    height: 300px;
+    width: 100%;
+  img {
+    width: 230px;
+  }
+}
+
+// SECTION2
+.section2-title-content {
+  padding: 10vh 10vw;
+}
+.section2-content {
   flex-direction: row;
+  height: 380px;
+  column-gap: 45px;
+
+}
+.design-skill, .webdev-skill {
+  height: 100%;
   justify-content: flex-start;
-  column-gap: 5em;
-}
-.design-skill, .coding-skill {
-  justify-content: unset;
-  padding: 0;
-  row-gap: 1em;
-  width: 280px;
 }
 
-.featured-work {
-  flex-direction: row!important;
+.webdev-skill-content, .design-skill-content {
+  padding: 50px 32px 0 32px;
+  row-gap: 25px;
+
+}
+
+// SECTION3
+.section3-title-content {
+  padding: 10vh 10vw;
+}
+
+.work-card-wrap {
+  flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 5em;
-  padding: 0!important;
-  align-items: unset!important;
-
-}
-
-.work01,
-.work02, .work03  {
-  width: 25vw;
-  row-gap: 1em;
-
-}
-
-.work-img {
-  height:350px;
   width: 100%;
-  padding: 0;
- 
+  justify-content: center;
+  column-gap: 80px;
+  row-gap: 100px;
 }
-
-.skill-detail ul li {
-  font-size: 1.5em!important;
-  padding: 0!important;
-  line-height: 1.5em;
-  font-weight: 500;
-}
-
-.work-link {
-  font-size: 0.5em;
-}
-
-.school {
-  padding: 0;
-  h4 {
-    font-size: 2.5em;
+.work {
+  width: 35%;
+  img {
+    height: 300px;
+    width: 100%;
   }
-}
-.location-wrap {
-  h5 {
-    font-size: 1.8em;
-  }
-  span {
-    font-size: 1.5em;
-  }
+
 }
 
 
-.education-01 {
-  row-gap: 1em;
+// SECTION4
+.section4-title-content {
+  padding: 10vh 10vw;
+}
+.reason-card-wrap {
+  row-gap: 40px;
+}
+.reason-card-content {
+  padding: 25px;
+  row-gap: 30px;
+}
+// SECTION5
+.experience-title-content {
+  flex-direction: row;
+  padding: 10vh 10vw;
+  column-gap: 70px;
+}
+.experience-card-wrap {
+  row-gap: 35px;
 }
 
 
-.mail-wrap {
-  font-size: 0.8em;
-  width: 30em!important;
-  height: 7em!important;
+// SECTION6
+
+.section6-wrap {
+  padding: 10vh 10vw;
+}
+.btn-text-send {
+
+  padding: 10px 50px;
+
 }
 
 #footer {
-  p {
-    font-size: 1.5em!important;
-  }
+  height: 80px;
 }
 
-  }
+}
  

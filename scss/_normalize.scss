@@ -5,8 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 14px;
-  
 }
 
 
@@ -21,17 +19,9 @@ section:nth-child(1n) {
 }
 
 section:nth-child(2n) {
-  background: $bgColorL!important;
+  background: $bgColor;
 }
 
-
-p {
-  color: $lBlack;
-}
-
-#footer {
-  background-color: #9B887F;
-  p {
-    color: #fff;
-  }
+.prColor {
+  color: $prColor;
 }
