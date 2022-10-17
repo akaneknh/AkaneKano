@@ -21,7 +21,11 @@ section:nth-child(1n) {
 section:nth-child(2n) {
   background: $bgColor;
 }
-
-.prColor {
+.akane {
   color: $prColor;
+}
+
+
+#footer {
+  background-color: $bgColor;
 }

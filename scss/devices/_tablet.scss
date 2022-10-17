@@ -95,18 +95,22 @@
 }
 .section2-content {
   flex-direction: row;
-  height: 380px;
+  height: 480px;
   column-gap: 45px;
 
 }
 .design-skill, .webdev-skill {
-  height: 100%;
+  width: 40vw;
+  height:450px;
   justify-content: flex-start;
 }
 
 .webdev-skill-content, .design-skill-content {
-  padding: 50px 32px 0 32px;
+  padding: 50px 5vw;
+  height: 100%;
   row-gap: 25px;
+  width: unset;
+  justify-items: flex-start;
 
 }
 

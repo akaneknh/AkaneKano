@@ -5,7 +5,7 @@
     font-weight: $h1FWm;
     letter-spacing: $h1LSm;
     line-height: $h1Lhm;
-    font-family: Tiempos, 'Times New Roman', sans-serif;
+    font-family: $enFont;
   }
 
   h2 {
@@ -13,7 +13,7 @@
     font-size: $h2FSm;
     font-weight: $h2FWm;
     letter-spacing: $h2LSm;
-    font-family: Tiempos, 'Times New Roman', sans-serif;
+    font-family: $enFont;
   }
 
   h3 {
@@ -21,8 +21,6 @@
     font-size: $h3FSm;
     font-weight: $h3FWm;
     letter-spacing: $h3LSm;
-    text-transform: uppercase;
-
   }
 
   h4 {
@@ -63,7 +61,7 @@
     font-weight: $h1FWt;
     letter-spacing: $h1LSt;
     line-height: $h1Lht;
-    font-family: Tiempos, 'Times New Roman', sans-serif;
+    font-family: $enFont;
   }
 
   h2 {
@@ -71,7 +69,7 @@
     font-size: $h2FSt;
     font-weight: $h2FWt;
     letter-spacing: $h2LSt;
-    font-family: Tiempos, 'Times New Roman', sans-serif;
+    font-family: $enFont;
   }
 
   h3 {
@@ -115,7 +113,7 @@
     font-weight: $h1FWd;
     letter-spacing: $h1LSd;
     line-height: $h1Lhd;
-    font-family: Tiempos, 'Times New Roman', sans-serif;
+    font-family: $enFont;
   }
 
   h2 {
@@ -123,7 +121,7 @@
     font-size: $h2FSd;
     font-weight: $h2FWd;
     letter-spacing: $h2LSd;
-    font-family: Tiempos, 'Times New Roman', sans-serif;
+    font-family: $enFont;
   }
 
   h3 {
