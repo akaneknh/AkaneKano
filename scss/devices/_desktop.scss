@@ -118,7 +118,8 @@
   }
 
   .section2-content {
-  height: 480px;;
+  height: 480px;
+  justify-content: center;
   }
 
   .design-skill-content,
@@ -141,6 +142,23 @@
   .level-content {
     row-gap: 15px;
   }
+  .other-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    row-gap: 60px;
+  }
+  .other-side-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+.aside-img-wrap {
+  width: 300px;
+}
+
 
   // SECTION3
 
@@ -175,10 +193,14 @@
   // SECTION5
   .reason-card-wrap {
     flex-direction: row;
+    justify-content: center;
     column-gap: 50px;
-    height: 480px;
+    height: 500px;
   }
+.section4-title-content {
+  justify-content: center;
 
+}
   .reason-card-content {
     height: 100%;
     padding: 30px 30px;

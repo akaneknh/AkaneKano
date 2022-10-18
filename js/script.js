@@ -17,7 +17,7 @@ $(function () {
     const windowHeight = $(window).height();
     const scroll = $(window).scrollTop();
 
-    $('.design-skill, .webdev-skill, .work, .reason-card, .experience-card').each(function () {
+    $('.design-skill, .webdev-skill, .work, .other-side-content, .reason-card, .experience-card').each(function () {
       const targetPosition = $(this).offset().top;
       if (scroll > targetPosition - windowHeight + 100) {
         $(this).addClass("is-fadein");
