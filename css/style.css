@@ -49,7 +49,7 @@ section:nth-child(2n) {
 @media (min-width: 300px) {
   body h1 {
     color: #333;
-    font-size: 42px;
+    font-size: 52px;
     font-weight: 600;
     letter-spacing: 1%;
     line-height: 60px;
@@ -234,6 +234,27 @@ section:nth-child(2n) {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .section1-title-wrap h1 span {
+    color: #E16E36;
+  }
+  .hero-text-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .hero-text {
+    color: #555;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  .hero-underline {
+    -webkit-box-shadow: inset 0 -9px 0 0 #ffb28d;
+            box-shadow: inset 0 -9px 0 0 #ffb28d;
+  }
   .hero-detail {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -333,7 +354,22 @@ section:nth-child(2n) {
             align-items: center;
     row-gap: 60px;
   }
-  .section2-title-content h2 {
+  .about-text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
+  .about-text h2 {
     width: 100%;
     text-align: center;
   }
@@ -667,16 +703,27 @@ section:nth-child(2n) {
     width: 100%;
     text-align: center;
   }
-  .section6-wrap .btn-text-send {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 50px;
-    border-radius: 10px;
-    background-color: #E16E36;
-  }
   .experience-title-content h2 {
     padding-bottom: 30px;
     border-bottom: 1px solid #e4e4e4;
+  }
+  .section6-wrap a {
+    background-color: #E16E36;
+    text-decoration: none;
+    color: #fff !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #888;
+    font-size: 16px;
+  }
+  .section6-wrap a i {
+    padding-right: 10px;
+  }
+  .section6-wrap a:hover {
+    opacity: 0.5;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   footer {
     height: 42px;
@@ -826,18 +873,18 @@ section:nth-child(2n) {
         -ms-flex-direction: row;
             flex-direction: row;
     height: 480px;
-    -webkit-column-gap: 45px;
-            column-gap: 45px;
+    -webkit-column-gap: 5vw;
+            column-gap: 5vw;
   }
   .design-skill, .webdev-skill {
-    width: 40vw;
-    height: 450px;
+    width: 35vw;
+    height: 100%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
   .webdev-skill-content, .design-skill-content {
-    padding: 50px 5vw;
+    padding: 50px 25px;
     height: 100%;
     row-gap: 25px;
     width: unset;
@@ -893,8 +940,9 @@ section:nth-child(2n) {
   .section6-wrap {
     padding: 10vh 10vw;
   }
-  .btn-text-send {
-    padding: 10px 50px;
+  .section6-wrap a {
+    padding: 12px 18px;
+    font-size: 18px;
   }
   #footer {
     height: 80px;
@@ -1022,6 +1070,7 @@ section:nth-child(2n) {
   }
   .section1-title-wrap {
     padding-top: 50px;
+    padding-bottom: 0;
     width: 850px;
     row-gap: 50px;
   }
@@ -1049,7 +1098,7 @@ section:nth-child(2n) {
   .hero-img-wrap img {
     margin-top: -100px;
     height: 100%;
-    width: 250px;
+    width: 200px;
   }
   .section2-title-content {
     padding: 100px 0px;
@@ -1059,7 +1108,7 @@ section:nth-child(2n) {
     text-align: center;
   }
   .section2-content {
-    height: 100%;
+    height: 50vh;
   }
   .design-skill-content,
   .webdev-skill-content {
@@ -1123,10 +1172,9 @@ section:nth-child(2n) {
     padding-bottom: 30px;
     border-bottom: 1px solid #e4e4e4;
   }
-  .section6-wrap .btn-text-send:hover {
-    opacity: 0.5;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+  .section6-wrap a {
+    padding: 15px 20px;
+    font-size: 18px;
   }
   #footer .sub-title {
     font-size: 12px;
