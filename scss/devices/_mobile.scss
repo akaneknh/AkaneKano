@@ -246,7 +246,7 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 30px;
 
   h2 {
     width: 100%;
@@ -325,7 +325,7 @@
 .other-side {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 30px;
   width: 100%;
   // height: autp;
   h2 {
@@ -435,9 +435,9 @@ row-gap: 20px;
 }
 
 
-// SECTION4
-.section4-title-content {
-  padding: 60px 10vw;
+// MY VALUES
+.my-values-title-content {
+  // padding: 60px 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -523,10 +523,7 @@ row-gap: 20px;
   flex-direction: column;
 }
 
-
-// SECTION6
-
-.section6-wrap {
+.section5-wrap {
   padding: 60px 10vw;
   display: flex;
   flex-direction: column;
@@ -550,7 +547,7 @@ row-gap: 20px;
 }
 
 // SECTION 6 
-.section6-wrap {
+.section5-wrap {
   a {
     background-color: $prColor;
     text-decoration: none;
@@ -582,9 +579,10 @@ footer {
 }
 
 .copy-right {
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
-  color: #888;
+  font-weight: 600;
+  color: #bbbbbb;
 }
 
 }

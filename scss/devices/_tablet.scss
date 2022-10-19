@@ -92,15 +92,17 @@
 // SECTION2
 .section2-title-content {
   padding: 10vh 10vw;
+
 }
 .section2-content {
   flex-direction: row;
   height: 450px;
   column-gap: 5vw;
+  justify-content: center;
 
 }
 .design-skill, .webdev-skill {
-  width: 35vw;
+  width: 100%;
   height:100%;
   justify-content: flex-start;
 }
@@ -136,8 +138,13 @@
 
 
 }
+.other-side {
+  row-gap: 40px;
+}
+
 .other-side-text {
   width: 50vw;
+
 }
 
 // SECTION3
@@ -165,18 +172,16 @@
 }
 
 
-// SECTION4
-.section4-title-content {
-  padding: 10vh 10vw;
-}
+// MY VALUES
+
 .reason-card-wrap {
   row-gap: 40px;
 }
 .reason-card-content {
-  padding: 25px;
+  padding: 25px 25px 40px 25px;
   row-gap: 30px;
 }
-// SECTION5
+// SECTION4
 .experience-title-content {
   flex-direction: row;
   padding: 10vh 10vw;
@@ -187,9 +192,9 @@
 }
 
 
-// SECTION6
+// SECTION5
 
-.section6-wrap {
+.section5-wrap {
   padding: 10vh 10vw;
   a {
     padding: 12px 18px;
@@ -199,6 +204,7 @@
 
 
 #footer {
+  font-size: 16px;
   height: 80px;
 }
 

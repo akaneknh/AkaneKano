@@ -142,6 +142,33 @@
   .level-content {
     row-gap: 15px;
   }
+
+// MY VALUES
+.reason-card-wrap {
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 50px;
+  height: 500px;
+}
+
+.my-values-title-content {
+justify-content: center;
+
+}
+.reason-card-content {
+  height: 100%;
+  padding: 30px 30px;
+  justify-content: flex-start;
+
+}
+
+.reason-card {
+  width: 320px;
+  height: 100%;
+}
+
+
+// OTHER SIDE OF ME
   .other-side {
     display: flex;
     justify-content: center;
@@ -186,34 +213,7 @@
     }
   }
 
-
-
-
-
-  // SECTION5
-  .reason-card-wrap {
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 50px;
-    height: 500px;
-  }
-.section4-title-content {
-  justify-content: center;
-
-}
-  .reason-card-content {
-    height: 100%;
-    padding: 30px 30px;
-    justify-content: flex-start;
-
-  }
-
-  .reason-card {
-    width: 320px;
-    height: 100%;
-  }
-
-  // SECTION5
+  // SECTION4
   .experience-title-content {
     padding: 80px 25%;
     column-gap: 100px;
@@ -224,8 +224,8 @@
     }
   }
 
-  // SECTION6
-  .section6-wrap {
+  // SECTION5
+  .section5-wrap {
     a {
       padding: 15px 20px;
       font-size: 18px;
@@ -234,11 +234,10 @@
 
 
   #footer {
-    .sub-title {
-      font-size: 12px;
+    .copy-right {
+      font-size: 14px;
+      height: 20px;
     }
   }
-
-
 
 }
