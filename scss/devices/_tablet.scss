@@ -42,7 +42,7 @@
   }
   .nav-list {
     font-size: $h4FSt;
-    top: 40%;
+    top: 45%;
   }
   .nav-item {
     margin-bottom: 2em;
@@ -93,6 +93,7 @@
 // SECTION2
 .section2-title-content {
   padding: 10vh 10vw;
+  row-gap: 60px;
 
 }
 .section2-content {
@@ -173,7 +174,7 @@
 }
 
 
-// Areas of expertise
+// MY STRENGTHS
 
 .reason-card-wrap {
   row-gap: 40px;
@@ -182,12 +183,18 @@
   padding: 25px 25px 40px 25px;
   row-gap: 30px;
 }
+.strengths-title-content {
+  row-gap: 60px;
+}
+
 // SECTION4
 .experience-title-content {
   flex-direction: row;
   padding: 10vh 10vw;
   column-gap: 70px;
+  
 }
+
 .experience-card-wrap {
   row-gap: 35px;
 }

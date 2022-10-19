@@ -200,7 +200,7 @@ section:nth-child(2n) {
     left: 50%;
     position: absolute;
     text-align: center;
-    top: 35%;
+    top: 40%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
@@ -356,7 +356,7 @@ section:nth-child(2n) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 60px;
+    row-gap: 30px;
   }
   .about-text {
     width: 100%;
@@ -635,7 +635,7 @@ section:nth-child(2n) {
             flex-direction: column;
     row-gap: 10px;
   }
-  .expertise-title-content {
+  .strengths-title-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -646,9 +646,9 @@ section:nth-child(2n) {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 60px;
+    row-gap: 30px;
   }
-  .expertise-title-content h2 {
+  .strengths-title-content h2 {
     width: 100%;
     text-align: center;
   }
@@ -904,7 +904,7 @@ section:nth-child(2n) {
   }
   .nav-list {
     font-size: 19px;
-    top: 40%;
+    top: 45%;
   }
   .nav-item {
     margin-bottom: 2em;
@@ -943,6 +943,7 @@ section:nth-child(2n) {
   }
   .section2-title-content {
     padding: 10vh 10vw;
+    row-gap: 60px;
   }
   .section2-content {
     -webkit-box-orient: horizontal;
@@ -1045,6 +1046,9 @@ section:nth-child(2n) {
   .reason-card-content {
     padding: 25px 25px 40px 25px;
     row-gap: 30px;
+  }
+  .strengths-title-content {
+    row-gap: 60px;
   }
   .experience-title-content {
     -webkit-box-orient: horizontal;
@@ -1262,7 +1266,7 @@ section:nth-child(2n) {
             column-gap: 50px;
     height: 500px;
   }
-  .expertise-title-content {
+  .strengths-title-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
