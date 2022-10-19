@@ -44,3 +44,22 @@ transform: translateX(0);
 opacity: 1;
 visibility: visible;
 }
+
+
+/*========= typing ===============*/
+
+.TextTyping span {
+  display: none;
+}
+
+/*cursor*/
+.TextTyping::after {
+  content: "|";
+  animation: typinganime 1.0s ease infinite;
+}
+
+@keyframes typinganime{
+  from{opacity:0}
+  to{opacity:1}
+}
+

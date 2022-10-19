@@ -47,6 +47,36 @@ section:nth-child(2n) {
   visibility: visible;
 }
 
+/*========= typing ===============*/
+.TextTyping span {
+  display: none;
+}
+
+/*cursor*/
+.TextTyping::after {
+  content: "|";
+  -webkit-animation: typinganime 1.0s ease infinite;
+          animation: typinganime 1.0s ease infinite;
+}
+
+@-webkit-keyframes typinganime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes typinganime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 300px) {
   body h1 {
     color: #333;
