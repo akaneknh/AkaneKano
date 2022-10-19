@@ -1,5 +1,5 @@
 # AkaneKano
-This is my portfolio side. I made it with HTML/SCSS/jQuery from scrach!
+This is my portfolio. I made it with HTML/SCSS/jQuery from scrach!
 Here is the link:
 https://akaneknh.github.io/AkaneKano/
 
