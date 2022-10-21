@@ -990,7 +990,7 @@ section:nth-child(2n) {
     width: 100%;
     text-align: center;
   }
-  .my-role-wrap {
+  .role-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1004,11 +1004,11 @@ section:nth-child(2n) {
     padding: 0 5vw;
     row-gap: 20px;
   }
-  .my-role-wrap h2 {
+  .role-wrap h2 {
     width: 100%;
     text-align: center;
   }
-  .my-role-wrap ul {
+  .role-wrap ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1019,7 +1019,7 @@ section:nth-child(2n) {
     width: 80vw;
     row-gap: 10px;
   }
-  .my-role-wrap ul li {
+  .role-wrap ul li {
     color: #333;
     font-size: 18px;
   }
@@ -1388,10 +1388,10 @@ section:nth-child(2n) {
   .time-frame-wrap p {
     text-align: left;
   }
-  .my-role-wrap {
+  .role-wrap {
     width: 90vw;
   }
-  .my-role-wrap h2 {
+  .role-wrap h2 {
     text-align: left;
   }
   .img-link-wrap {
@@ -1730,11 +1730,11 @@ section:nth-child(2n) {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .function-req-wrap, .time-frame-wrap, .my-role-wrap, .img-with-link-title-wrap, .img-text-title-wrap {
+  .function-req-wrap, .time-frame-wrap, .role-wrap, .img-with-link-title-wrap, .img-text-title-wrap {
     width: 60vw;
     row-gap: 50px;
   }
-  .function-req-wrap ul, .time-frame-wrap ul, .my-role-wrap ul, .img-with-link-title-wrap ul, .img-text-title-wrap ul {
+  .function-req-wrap ul, .time-frame-wrap ul, .role-wrap ul, .img-with-link-title-wrap ul, .img-text-title-wrap ul {
     width: 55vw;
     -webkit-box-align: start;
         -ms-flex-align: start;
