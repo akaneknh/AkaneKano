@@ -1082,7 +1082,7 @@ section:nth-child(2n) {
     row-gap: 10px;
   }
   .thanks-reading {
-    width: 100%;
+    width: 80vw;
     text-align: center;
     padding: 80px 0;
   }
@@ -1728,9 +1728,9 @@ section:nth-child(2n) {
   }
   .work-img2 {
     width: 50%;
-    height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 300px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .function-req-wrap, .time-frame-wrap, .role-wrap, .img-with-link-title-wrap, .img-text-title-wrap {
     width: 60vw;
