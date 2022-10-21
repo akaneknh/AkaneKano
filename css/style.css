@@ -1401,6 +1401,7 @@ section:nth-child(2n) {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
+    row-gap: 30px;
   }
   .work-img2 {
     -o-object-fit: cover;
@@ -1727,10 +1728,14 @@ section:nth-child(2n) {
     height: 300px;
   }
   .work-img2 {
-    width: 50%;
+    width: auto;
+    margin-right: auto;
     height: 300px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .img-link-wrap {
+    row-gap: 50px;
   }
   .function-req-wrap, .time-frame-wrap, .role-wrap, .img-with-link-title-wrap, .img-text-title-wrap {
     width: 60vw;

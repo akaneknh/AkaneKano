@@ -262,9 +262,13 @@ justify-content: center;
   
 }
 .work-img2 {
-  width: 50%;
+  width: auto;
+  margin-right: auto;
   height: 300px;
   object-fit: contain;
+}
+.img-link-wrap {
+  row-gap: 50px;
 }
 
 .function-req-wrap, .time-frame-wrap, .role-wrap, .img-with-link-title-wrap, .img-text-title-wrap {
