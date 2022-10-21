@@ -1344,8 +1344,8 @@ section:nth-child(2n) {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-column-gap: 5vw;
-            column-gap: 5vw;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
   }
   .project-detail-img-wrap p {
     width: 30vw;
@@ -1406,10 +1406,35 @@ section:nth-child(2n) {
     height: 300px;
     width: 50%;
   }
+  .img-p-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 25px;
+            column-gap: 25px;
+  }
+  .img-p-wrap p {
+    width: 30vw;
+    height: 100%;
+  }
   .img-with-link-title-wrap {
     width: 90vw;
   }
   .img-with-link-title-wrap h2 {
+    width: 100%;
+    text-align: left;
+  }
+  .img-text-title-wrap {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .img-text-title-wrap h2 {
+    width: 100%;
     text-align: left;
   }
 }
