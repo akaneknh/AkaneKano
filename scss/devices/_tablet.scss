@@ -280,9 +280,10 @@
   row-gap: 30px;
 }
  .work-img2 {
-  object-fit: cover;
+  object-fit: contain;
+  margin-right: auto;
   height:300px;
-  width:50%;
+  width: auto;
 } 
 .img-p-wrap {
   display: flex;
