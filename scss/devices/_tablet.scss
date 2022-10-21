@@ -216,5 +216,80 @@
   height: 80px;
 }
 
+
+// DETAIL PAGE WORK1
+.project-detail-img-wrap {
+  flex-direction: row;
+  // padding: uns et;
+  column-gap: 5vw;
+  p {
+    width: 30vw;
+    height: 100%;
+   }
+  
+}
+
+.work-img1 {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.project-detail-img-link {
+  height: 100%;
+ width: 50vw;
+
+}
+.function-req-wrap {
+  width: 90vw;
+  h2 {
+    text-align: left;
+  }
+
+}
+.req-time-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+  ;
+  column-gap: 20px;
+
+}
+
+
+.time-frame-wrap {
+
+  h2 {
+    text-align: left;
+  }
+  p {
+    text-align: left;
+  }
+
+}
+.my-role-wrap {
+  width: 90vw;
+  h2 {
+    text-align: left;
+  }
+
+}
+.img-link-wrap {
+  align-items: flex-start;
+  width: 100%;
+}
+ .work-img2 {
+  object-fit: cover;
+  height:300px;
+  width:50%;
+} 
+
+.img-with-link-title-wrap {
+  width: 90vw;
+  h2 {
+    text-align: left;
+  }
+}
 }
  

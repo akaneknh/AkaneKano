@@ -241,6 +241,49 @@ justify-content: center;
     }
   }
 
+// DETAIL PAGE
+// .work-detail-main {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
+.project-detail-title {
+  width: 60vw;
+}
+.project-detail-title-wrap {
+  width: unset;
+}
+.project-detail-img-wrap {
+  width: 60vw;
+ p {
+  width: 100%;
+ }
+}
+
+.work-img1 {
+  width: 400px;
+  height: 300px;
+  
+}
+.work-img2 {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.function-req-wrap, .time-frame-wrap, .my-role-wrap, .img-with-link-title-wrap, .img-text-title-wrap {
+  width: 60vw;
+  row-gap: 50px;
+    ul{
+      width: 55vw;
+      align-items: flex-start;
+    }
+
+
+
+ 
+}
 
 
 }
