@@ -1082,6 +1082,8 @@ section:nth-child(2n) {
     row-gap: 10px;
   }
   .thanks-reading {
+    width: 100%;
+    text-align: center;
     padding: 80px 0;
   }
 }
