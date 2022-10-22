@@ -1781,8 +1781,8 @@ section:nth-child(2n) {
   .work-img1 {
     width: 50vw;
     height: 40vh;
-    -o-object-position: 50% 45%;
-       object-position: 50% 45%;
+    -o-object-position: 0% 100%;
+       object-position: 0% 100%;
   }
   .work-img2 {
     width: 30vw;
