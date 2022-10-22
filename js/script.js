@@ -112,6 +112,6 @@ var headerH = $("header").outerHeight(true);
 $('#g-nav ul li a').click(function () {
   var elmHash = $(this).attr('href');
   var pos = $(elmHash).offset().top - headerH;
-  $('body,html').animate({ scrollTop: pos }, 1000);
+  $('body,html').animate({ scrollTop: pos }, 70);
   return false;
 });
