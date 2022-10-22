@@ -81,8 +81,8 @@ $(window).on('load', function () {
 var beforePos = 0;
 
 function ScrollAnime() {
-var elemTop = $('#section2, .function-req-wrap').offset().top;
-var scroll = $(window).scrollTop();
+  var elemTop = $('#section2, .function-req-wrap').offset().top;
+  var scroll = $(window).scrollTop();
 
   if (scroll == beforePos) {
 
@@ -98,8 +98,6 @@ var scroll = $(window).scrollTop();
 
   beforePos = scroll;
 }
-
-
 
 $(window).scroll(function () {
   ScrollAnime();
