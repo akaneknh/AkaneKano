@@ -429,8 +429,8 @@
   }
 
   .work:hover {
-   opacity: 0.6;
-   transition: .3s;
+    opacity: 0.6;
+    transition: .3s;
   }
 
 
@@ -651,14 +651,19 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    // width: %;
+
   }
 
 
-  .work-img1,
-  .work-img2 {
+  .work-img1 {
     width: 100%;
     height: 300px;
+    object-fit: cover;
+  }
+
+  .work-img2 {
+    width: 90vw;
+    // height: 300px;
     object-fit: contain;
   }
 
@@ -750,6 +755,12 @@
       width: 100%;
       text-align: center;
     }
+  }
+
+  .img-p-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 
   .img-text-wrap {
