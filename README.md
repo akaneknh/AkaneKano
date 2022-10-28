@@ -1,5 +1,5 @@
 # AkaneKano
-This is my portfolio created with HTML/SCSS/jQuery from design to coding!
+This is my portfolio created with HTML/SCSS/jQuery from design to coding! This website is responsive design.
 Here is the link:
 https://akaneknh.github.io/AkaneKano/
 
