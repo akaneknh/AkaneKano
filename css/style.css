@@ -1167,7 +1167,7 @@ section:nth-child(2n) {
     background-image: url("../img/profile2.png");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 450px;
     width: 400px;
   }
   .section2-title-content {
