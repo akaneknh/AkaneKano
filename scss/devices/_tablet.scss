@@ -62,8 +62,10 @@
 
   // SECTION1
   .section1-title-wrap {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
     padding: 150px 10vw;
-    row-gap: 50px;
 
   }
 
@@ -91,12 +93,12 @@
   }
 
   .hero-img-wrap {
-    height: 300px;
-    width: 100%;
-
-    img {
-      width: 230px;
-    }
+    background-image: url(/img/profile2.png);
+    background-size:contain;
+    background-position: centert;
+    background-repeat:no-repeat;
+    height: 350px;
+    width:100%;
   }
 
   // SECTION2
@@ -143,17 +145,12 @@
   }
 
   .aside-img-wrap {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-
-    img {
-
-      width: 100%;
-
-    }
-
+    background-image: url(/img/other-side.jpg);
+    background-size:cover;
+    background-position: center;
+    border-radius: 63% 37% 36% 64% / 57% 63% 37% 43% ;
+    height: 250px;
+    width: 250px;
 
   }
 
