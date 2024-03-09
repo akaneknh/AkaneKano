@@ -270,7 +270,7 @@ section:nth-child(2n) {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    background-image: url("/img/profile2.png");
+    background-image: url("../img/profile2.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -374,7 +374,7 @@ section:nth-child(2n) {
     row-gap: 20px;
   }
   .aside-img-wrap {
-    background-image: url(/img/other-side.jpg);
+    background-image: url("../img/other-side.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 63% 37% 36% 64%/57% 63% 37% 43%;
@@ -834,7 +834,7 @@ section:nth-child(2n) {
     height: 300px;
   }
   .hero-img-wrap {
-    background-image: url("/img/profile2.png");
+    background-image: url("../img/profile2.png");
     background-size: contain;
     background-position: centert;
     background-repeat: no-repeat;
@@ -878,7 +878,7 @@ section:nth-child(2n) {
          column-gap: 5vw;
   }
   .aside-img-wrap {
-    background-image: url("/img/other-side.jpg");
+    background-image: url("../img/other-side.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 63% 37% 36% 64%/57% 63% 37% 43%;
@@ -1164,7 +1164,7 @@ section:nth-child(2n) {
     transition: 0.3s;
   }
   .hero-img-wrap {
-    background-image: url("/img/profile2.png");
+    background-image: url("../img/profile2.png");
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -1228,7 +1228,7 @@ section:nth-child(2n) {
     align-items: center;
   }
   .aside-img-wrap {
-    background-image: url("/img/other-side.jpg");
+    background-image: url("../img/other-side.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 63% 37% 36% 64%/57% 63% 37% 43%;
