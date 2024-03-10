@@ -842,7 +842,7 @@ section:nth-child(2n) {
     width: 100%;
   }
   .section2-title-content {
-    padding: 10vh 10vw;
+    padding: 10vh 5vw;
     row-gap: 60px;
   }
   .section2-content {
@@ -1141,7 +1141,7 @@ section:nth-child(2n) {
     display: flex;
     flex-direction: row;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 10vh;
     width: 850px;
     -moz-column-gap: 10%;
          column-gap: 10%;
@@ -1171,7 +1171,8 @@ section:nth-child(2n) {
     width: 400px;
   }
   .section2-title-content {
-    padding: 100px 0px;
+    width: 850px;
+    padding: 10vh 0px;
   }
   .section2-title-content h2 {
     width: 100%;
@@ -1201,7 +1202,8 @@ section:nth-child(2n) {
     justify-content: center;
     -moz-column-gap: 50px;
          column-gap: 50px;
-    height: 500px;
+    height: 600px;
+    width: 950px;
   }
   .strengths-title-content {
     justify-content: center;
