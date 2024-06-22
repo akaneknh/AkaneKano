@@ -10,6 +10,7 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: #fff;
+  line-height: 2em;
 }
 
 section:nth-child(1n) {
@@ -828,7 +829,7 @@ section:nth-child(2n) {
   }
   .hero-link .sub-title {
     font-size: 16px;
-    padding: 10px 40px;
+    padding: 5px 20px;
   }
   .hero-wrap {
     height: 300px;
@@ -1006,6 +1007,9 @@ section:nth-child(2n) {
   }
 }
 @media (min-width: 1000px) {
+  body {
+    line-height: 2.5em;
+  }
   body h1 {
     color: #333;
     font-size: 55px;
@@ -1157,7 +1161,7 @@ section:nth-child(2n) {
   }
   .hero-link .sub-title {
     font-size: 16px;
-    padding: 10px 25px;
+    padding: 5px 25px;
   }
   .hero-link .sub-title:hover,
   .hero-link i:hover {
@@ -1231,7 +1235,7 @@ section:nth-child(2n) {
     align-items: center;
   }
   .aside-img-wrap {
-    background-image: url("../img/other-side.jpg");
+    background-image: url("../img/team.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 63% 37% 36% 64%/57% 63% 37% 43%;
